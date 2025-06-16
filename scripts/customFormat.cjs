@@ -2,6 +2,24 @@
 const StyleDictionary = require('style-dictionary');
 const path = require('path');
 
+// Transformador de nombre con prefijo del archivo
+StyleDictionary.registerTransform({
+  name: 'name/with-fileprefix',
+  type: 'name',
+  transformer: function (prop) {
+    const file = prop.filePath.split('/').pop().replace('.json', '');
+    const fileKey = file.toLowerCase().replace(/\s+/g, '').replace(/\./g, '');
+    return `tw-${fileKey}-${prop.name.replace(/\./g, '-')}`;
+  }
+});
+
+// Grupo de transformación personalizado
+StyleDictionary.registerTransformGroup({
+  name: 'custom/css-prefixed-names',
+  transforms: ['attribute/cti', 'name/with-fileprefix', 'color/css']
+});
+
+// Formato modular con atributos personalizados
 StyleDictionary.registerFormat({
   name: 'custom/css-theme-modular',
   formatter: function ({ dictionary }) {
@@ -14,9 +32,8 @@ StyleDictionary.registerFormat({
       const collection = match?.[1]?.toLowerCase().replace(/\s+/g, '').replace(/\./g, '') || 'unknown';
       const mode = match?.[2]?.toLowerCase().replace(/\s+/g, '').replace(/\./g, '') || 'base';
 
-      const prefix = `tw-${collection}-${mode}`;
-      const varName = `--${prefix}-${prop.name.replace(/\./g, '-')}`;
       const key = `${collection}|${mode}`;
+      const varName = `--${prop.name}`;
 
       if (mode === 'base') {
         root += `  ${varName}: ${prop.value};\n`;
