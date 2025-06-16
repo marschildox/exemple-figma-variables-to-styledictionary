@@ -2,10 +2,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const inputDir = path.join(__dirname, 'tokens');
-const outputDir = path.join(__dirname, 'tokens-prepared');
+const inputDir = path.join(__dirname, '..', 'tokens');
+const outputDir = path.join(__dirname, '..', 'tokens-prepared');
 
-if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
+if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
 function processTokenObject(obj, prefix = [], result = {}) {
   for (const key in obj) {
@@ -14,7 +14,7 @@ function processTokenObject(obj, prefix = [], result = {}) {
     if (value && typeof value === 'object' && 'value' in value) {
       result[pathArray.join('.')] = {
         ...value,
-        name: pathArray.join('-') // name único basado en path
+        name: pathArray.join('-') // genera name único
       };
     } else if (typeof value === 'object') {
       processTokenObject(value, pathArray, result);
