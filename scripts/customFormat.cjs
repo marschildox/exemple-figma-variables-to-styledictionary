@@ -40,6 +40,7 @@ StyleDictionary.registerFormat({
       .map(([mode, content]) => `[data-theme="${mode}"] {\n${content}}\n\n`)
       .join('');
 
-    return root + themeBlocks;
+    const timestamp = `/* Generated: ${new Date().toISOString()} */\n`;
+    return root + themeBlocks + timestamp;
   }
 });
