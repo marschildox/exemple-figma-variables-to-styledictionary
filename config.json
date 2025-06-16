@@ -4,12 +4,12 @@
   ],
   "platforms": {
     "css": {
-      "transformGroup": "custom/css-unique-path",
+      "transformGroup": "custom/css-plain",
       "buildPath": "build/css/",
       "files": [
         {
           "destination": "variables.css",
-          "format": "custom/css-theme-modular"
+          "format": "custom/css-theme-mode-attributes"
         }
       ]
     }
