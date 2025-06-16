@@ -1,14 +1,24 @@
 
 const StyleDictionary = require('style-dictionary');
 const path = require('path');
+const fs = require('fs');
 
-// Grupo de transformación sin nombre custom
+const metadataPath = path.join(__dirname, '..', 'tokens-prepared', 'metadata.json');
+let metadata = {};
+
+if (fs.existsSync(metadataPath)) {
+  metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf-8'));
+} else {
+  console.warn('⚠️ No se encontró metadata.json. Se generarán solo bloques disponibles.');
+}
+
+// Grupo de transformación sin sobrescribir "name"
 StyleDictionary.registerTransformGroup({
   name: 'custom/css-plain',
   transforms: ['attribute/cti', 'color/css']
 });
 
-// Formato CSS modular con [data-theme="..."][data-mode="..."], tolerante con puntos
+// Formato CSS con data-theme y data-mode usando metadata
 StyleDictionary.registerFormat({
   name: 'custom/css-theme-mode-attributes',
   formatter: function ({ dictionary }) {
@@ -21,9 +31,8 @@ StyleDictionary.registerFormat({
       const parts = cleanName.split('.');
       const mode = parts.pop().toLowerCase().replace(/\s+/g, '').replace(/\./g, '');
       const collection = parts.join('').toLowerCase().replace(/\s+/g, '');
-
       const key = `${collection}|${mode}`;
-      const varName = `--${prop.name}`; // ya es único por preprocess
+      const varName = `--${prop.name}`;
 
       if (mode === 'base') {
         root += `  ${varName}: ${prop.value};\n`;
@@ -35,12 +44,17 @@ StyleDictionary.registerFormat({
 
     root += '}\n\n';
 
-    const themeBlocks = Object.entries(blocks)
-      .map(([key, content]) => {
-        const [collection, mode] = key.split('|');
-        return `[data-theme="${collection}"][data-mode="${mode}"] {\n${content}}\n\n`;
-      })
-      .join('');
+    const themeBlocks = Object.entries(metadata)
+      .map(([collection, modes]) =>
+        modes
+          .map(mode => {
+            const key = `${collection}|${mode}`;
+            const content = blocks[key] || '';
+            return `[data-theme="${collection}"][data-mode="${mode}"] {\n${content}}\n`;
+          })
+          .join('\n')
+      )
+      .join('\n\n');
 
     const timestamp = `/* Generated: ${new Date().toISOString()} */\n`;
     return root + themeBlocks + timestamp;
