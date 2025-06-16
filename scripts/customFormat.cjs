@@ -12,13 +12,11 @@ if (fs.existsSync(metadataPath)) {
   console.warn('⚠️ No se encontró metadata.json. Se generarán solo bloques disponibles.');
 }
 
-// Grupo de transformación sin sobrescribir "name"
 StyleDictionary.registerTransformGroup({
   name: 'custom/css-plain',
   transforms: ['attribute/cti', 'color/css']
 });
 
-// Formato CSS con data-theme y data-mode usando metadata
 StyleDictionary.registerFormat({
   name: 'custom/css-theme-mode-attributes',
   formatter: function ({ dictionary }) {
@@ -26,20 +24,17 @@ StyleDictionary.registerFormat({
     const blocks = {};
 
     dictionary.allProperties.forEach(prop => {
-      const filename = prop.filePath.split('/').pop();
-      const cleanName = filename.replace('.json', '');
-      const parts = cleanName.split('.');
-      const mode = parts.pop().toLowerCase().replace(/\s+/g, '').replace(/\./g, '');
-      const collection = parts.join('').toLowerCase().replace(/\s+/g, '');
-      const key = `${collection}${mode}`; // ✅ misma clave que en preprocess
+      // Extraemos collection y mode del nombre
+      const match = prop.name.match(/^tw-([a-z0-9]+)-([a-z0-9]+)-/);
+      if (!match) return; // ignorar si no coincide
+
+      const collection = match[1];
+      const mode = match[2];
+      const key = `${collection}${mode}`;
       const varName = `--${prop.name}`;
 
-      if (mode === 'base') {
-        root += `  ${varName}: ${prop.value};\n`;
-      } else {
-        if (!blocks[key]) blocks[key] = '';
-        blocks[key] += `  ${varName}: ${prop.value};\n`;
-      }
+      if (!blocks[key]) blocks[key] = '';
+      blocks[key] += `  ${varName}: ${prop.value};\n`;
     });
 
     root += '}\n\n';
@@ -48,7 +43,7 @@ StyleDictionary.registerFormat({
       .map(([collection, modes]) =>
         modes
           .map(mode => {
-            const key = `${collection}${mode}`; // ✅ clave unificada
+            const key = `${collection}${mode}`;
             const content = blocks[key] || '';
             return `[data-theme="${collection}"][data-mode="${mode}"] {\n${content}}\n`;
           })
