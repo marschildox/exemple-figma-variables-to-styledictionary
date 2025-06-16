@@ -13,7 +13,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hero-Font Family"
+      "name": "typography.mode 1-Hero-Font Family"
     },
     "size-lg": {
       "type": "number",
@@ -28,7 +28,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hero-size-lg"
+      "name": "typography.mode 1-Hero-size-lg"
     },
     "size-md": {
       "type": "number",
@@ -43,7 +43,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hero-size-md"
+      "name": "typography.mode 1-Hero-size-md"
     },
     "size-sm": {
       "type": "number",
@@ -58,7 +58,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hero-size-sm"
+      "name": "typography.mode 1-Hero-size-sm"
     },
     "size-xs": {
       "type": "number",
@@ -73,7 +73,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hero-size-xs"
+      "name": "typography.mode 1-Hero-size-xs"
     },
     "Font weight": {
       "type": "number",
@@ -88,7 +88,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hero-Font weight"
+      "name": "typography.mode 1-Hero-Font weight"
     }
   },
   "Hero Subtitle": {
@@ -105,7 +105,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hero Subtitle-Font Family"
+      "name": "typography.mode 1-Hero Subtitle-Font Family"
     },
     "size-lg": {
       "type": "number",
@@ -120,7 +120,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hero Subtitle-size-lg"
+      "name": "typography.mode 1-Hero Subtitle-size-lg"
     },
     "size-md": {
       "type": "number",
@@ -135,7 +135,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hero Subtitle-size-md"
+      "name": "typography.mode 1-Hero Subtitle-size-md"
     },
     "size-sm": {
       "type": "number",
@@ -150,7 +150,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hero Subtitle-size-sm"
+      "name": "typography.mode 1-Hero Subtitle-size-sm"
     },
     "Font regular": {
       "type": "number",
@@ -165,7 +165,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hero Subtitle-Font regular"
+      "name": "typography.mode 1-Hero Subtitle-Font regular"
     },
     "Font strong": {
       "type": "number",
@@ -180,7 +180,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hero Subtitle-Font strong"
+      "name": "typography.mode 1-Hero Subtitle-Font strong"
     }
   },
   "Page Title": {
@@ -197,7 +197,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Page Title-Font Family"
+      "name": "typography.mode 1-Page Title-Font Family"
     },
     "size-lg": {
       "type": "number",
@@ -212,7 +212,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Page Title-size-lg"
+      "name": "typography.mode 1-Page Title-size-lg"
     },
     "size-md": {
       "type": "number",
@@ -227,7 +227,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Page Title-size-md"
+      "name": "typography.mode 1-Page Title-size-md"
     },
     "size-sm": {
       "type": "number",
@@ -242,7 +242,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Page Title-size-sm"
+      "name": "typography.mode 1-Page Title-size-sm"
     },
     "Font weight": {
       "type": "number",
@@ -257,7 +257,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Page Title-Font weight"
+      "name": "typography.mode 1-Page Title-Font weight"
     }
   },
   "Page Subtitle": {
@@ -274,7 +274,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Page Subtitle-Font Family"
+      "name": "typography.mode 1-Page Subtitle-Font Family"
     },
     "size-lg": {
       "type": "number",
@@ -289,7 +289,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Page Subtitle-size-lg"
+      "name": "typography.mode 1-Page Subtitle-size-lg"
     },
     "size-md": {
       "type": "number",
@@ -304,7 +304,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Page Subtitle-size-md"
+      "name": "typography.mode 1-Page Subtitle-size-md"
     },
     "Size-sm": {
       "type": "number",
@@ -319,7 +319,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Page Subtitle-Size-sm"
+      "name": "typography.mode 1-Page Subtitle-Size-sm"
     },
     "Font weight": {
       "type": "number",
@@ -334,7 +334,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Page Subtitle-Font weight"
+      "name": "typography.mode 1-Page Subtitle-Font weight"
     }
   },
   "Section Title": {
@@ -351,7 +351,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Section Title-Font Family"
+      "name": "typography.mode 1-Section Title-Font Family"
     },
     "size-lg": {
       "type": "number",
@@ -366,7 +366,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Section Title-size-lg"
+      "name": "typography.mode 1-Section Title-size-lg"
     },
     "size-md": {
       "type": "number",
@@ -381,7 +381,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Section Title-size-md"
+      "name": "typography.mode 1-Section Title-size-md"
     },
     "Size-sm": {
       "type": "number",
@@ -396,7 +396,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Section Title-Size-sm"
+      "name": "typography.mode 1-Section Title-Size-sm"
     },
     "Font weight": {
       "type": "number",
@@ -411,7 +411,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Section Title-Font weight"
+      "name": "typography.mode 1-Section Title-Font weight"
     }
   },
   "Section Subtitle": {
@@ -428,7 +428,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Section Subtitle-Font Family"
+      "name": "typography.mode 1-Section Subtitle-Font Family"
     },
     "size-lg": {
       "type": "number",
@@ -443,7 +443,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Section Subtitle-size-lg"
+      "name": "typography.mode 1-Section Subtitle-size-lg"
     },
     "size-md": {
       "type": "number",
@@ -458,7 +458,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Section Subtitle-size-md"
+      "name": "typography.mode 1-Section Subtitle-size-md"
     },
     "Size-sm": {
       "type": "number",
@@ -473,7 +473,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Section Subtitle-Size-sm"
+      "name": "typography.mode 1-Section Subtitle-Size-sm"
     },
     "Font weight": {
       "type": "number",
@@ -488,7 +488,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Section Subtitle-Font weight"
+      "name": "typography.mode 1-Section Subtitle-Font weight"
     }
   },
   "Component Title": {
@@ -505,7 +505,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Component Title-Font Family"
+      "name": "typography.mode 1-Component Title-Font Family"
     },
     "size-lg": {
       "type": "number",
@@ -520,7 +520,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Component Title-size-lg"
+      "name": "typography.mode 1-Component Title-size-lg"
     },
     "size-md": {
       "type": "number",
@@ -535,7 +535,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Component Title-size-md"
+      "name": "typography.mode 1-Component Title-size-md"
     },
     "Size-sm": {
       "type": "number",
@@ -550,7 +550,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Component Title-Size-sm"
+      "name": "typography.mode 1-Component Title-Size-sm"
     },
     "Font weight": {
       "type": "number",
@@ -565,7 +565,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Component Title-Font weight"
+      "name": "typography.mode 1-Component Title-Font weight"
     }
   },
   "Component Subtitle": {
@@ -582,7 +582,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Component Subtitle-Font Family"
+      "name": "typography.mode 1-Component Subtitle-Font Family"
     },
     "size-lg": {
       "type": "number",
@@ -597,7 +597,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Component Subtitle-size-lg"
+      "name": "typography.mode 1-Component Subtitle-size-lg"
     },
     "size-md": {
       "type": "number",
@@ -612,7 +612,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Component Subtitle-size-md"
+      "name": "typography.mode 1-Component Subtitle-size-md"
     },
     "Size-sm": {
       "type": "number",
@@ -627,7 +627,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Component Subtitle-Size-sm"
+      "name": "typography.mode 1-Component Subtitle-Size-sm"
     },
     "Font weight": {
       "type": "number",
@@ -642,7 +642,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Component Subtitle-Font weight"
+      "name": "typography.mode 1-Component Subtitle-Font weight"
     }
   },
   "Body": {
@@ -659,7 +659,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Body-Font Family"
+      "name": "typography.mode 1-Body-Font Family"
     },
     "size-lg": {
       "type": "number",
@@ -674,7 +674,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Body-size-lg"
+      "name": "typography.mode 1-Body-size-lg"
     },
     "size-md": {
       "type": "number",
@@ -689,7 +689,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Body-size-md"
+      "name": "typography.mode 1-Body-size-md"
     },
     "Size-sm": {
       "type": "number",
@@ -704,7 +704,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Body-Size-sm"
+      "name": "typography.mode 1-Body-Size-sm"
     },
     "Font regular": {
       "type": "number",
@@ -719,7 +719,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Body-Font regular"
+      "name": "typography.mode 1-Body-Font regular"
     },
     "Font strong": {
       "type": "number",
@@ -734,7 +734,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Body-Font strong"
+      "name": "typography.mode 1-Body-Font strong"
     },
     "Italic": {
       "type": "string",
@@ -749,7 +749,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Body-Italic"
+      "name": "typography.mode 1-Body-Italic"
     }
   },
   "Button": {
@@ -766,7 +766,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Button-Font Family"
+      "name": "typography.mode 1-Button-Font Family"
     },
     "size-lg": {
       "type": "number",
@@ -781,7 +781,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Button-size-lg"
+      "name": "typography.mode 1-Button-size-lg"
     },
     "size-md": {
       "type": "number",
@@ -796,7 +796,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Button-size-md"
+      "name": "typography.mode 1-Button-size-md"
     },
     "size-sm": {
       "type": "number",
@@ -811,7 +811,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Button-size-sm"
+      "name": "typography.mode 1-Button-size-sm"
     },
     "Font strong": {
       "type": "number",
@@ -826,7 +826,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Button-Font strong"
+      "name": "typography.mode 1-Button-Font strong"
     }
   },
   "Caption": {
@@ -843,7 +843,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Caption-Font Family"
+      "name": "typography.mode 1-Caption-Font Family"
     },
     "size-lg": {
       "type": "number",
@@ -858,7 +858,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Caption-size-lg"
+      "name": "typography.mode 1-Caption-size-lg"
     },
     "size-md": {
       "type": "number",
@@ -873,7 +873,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Caption-size-md"
+      "name": "typography.mode 1-Caption-size-md"
     },
     "size-sm": {
       "type": "number",
@@ -888,7 +888,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Caption-size-sm"
+      "name": "typography.mode 1-Caption-size-sm"
     },
     "Font regular": {
       "type": "number",
@@ -903,7 +903,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Caption-Font regular"
+      "name": "typography.mode 1-Caption-Font regular"
     },
     "Font strong": {
       "type": "number",
@@ -918,7 +918,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Caption-Font strong"
+      "name": "typography.mode 1-Caption-Font strong"
     }
   }
 }

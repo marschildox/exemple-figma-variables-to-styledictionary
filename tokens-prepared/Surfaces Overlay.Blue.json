@@ -14,7 +14,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Neutral Based-0"
+      "name": "surfaces overlay.blue-Neutral Based-0"
     },
     "1": {
       "type": "color",
@@ -30,7 +30,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Neutral Based-1"
+      "name": "surfaces overlay.blue-Neutral Based-1"
     },
     "2": {
       "type": "color",
@@ -46,7 +46,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Neutral Based-2"
+      "name": "surfaces overlay.blue-Neutral Based-2"
     },
     "3": {
       "type": "color",
@@ -62,7 +62,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Neutral Based-3"
+      "name": "surfaces overlay.blue-Neutral Based-3"
     },
     "4": {
       "type": "color",
@@ -78,7 +78,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Neutral Based-4"
+      "name": "surfaces overlay.blue-Neutral Based-4"
     },
     "5": {
       "type": "color",
@@ -94,7 +94,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Neutral Based-5"
+      "name": "surfaces overlay.blue-Neutral Based-5"
     }
   },
   "Primary Based": {
@@ -112,7 +112,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Primary Based-0"
+      "name": "surfaces overlay.blue-Primary Based-0"
     },
     "1": {
       "type": "color",
@@ -128,7 +128,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Primary Based-1"
+      "name": "surfaces overlay.blue-Primary Based-1"
     },
     "2": {
       "type": "color",
@@ -144,7 +144,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Primary Based-2"
+      "name": "surfaces overlay.blue-Primary Based-2"
     },
     "3": {
       "type": "color",
@@ -160,7 +160,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Primary Based-3"
+      "name": "surfaces overlay.blue-Primary Based-3"
     },
     "4": {
       "type": "color",
@@ -176,7 +176,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Primary Based-4"
+      "name": "surfaces overlay.blue-Primary Based-4"
     },
     "5": {
       "type": "color",
@@ -192,7 +192,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Primary Based-5"
+      "name": "surfaces overlay.blue-Primary Based-5"
     }
   },
   "Secondary Based": {
@@ -209,7 +209,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Secondary Based-0"
+      "name": "surfaces overlay.blue-Secondary Based-0"
     },
     "1": {
       "type": "color",
@@ -224,7 +224,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Secondary Based-1"
+      "name": "surfaces overlay.blue-Secondary Based-1"
     },
     "2": {
       "type": "color",
@@ -239,7 +239,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Secondary Based-2"
+      "name": "surfaces overlay.blue-Secondary Based-2"
     },
     "3": {
       "type": "color",
@@ -254,7 +254,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Secondary Based-3"
+      "name": "surfaces overlay.blue-Secondary Based-3"
     },
     "4": {
       "type": "color",
@@ -269,7 +269,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Secondary Based-4"
+      "name": "surfaces overlay.blue-Secondary Based-4"
     },
     "5": {
       "type": "color",
@@ -284,7 +284,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Secondary Based-5"
+      "name": "surfaces overlay.blue-Secondary Based-5"
     }
   }
 }
