@@ -2,27 +2,9 @@
 const StyleDictionary = require('style-dictionary');
 const path = require('path');
 
-// Transformador de nombre que usa prop.path
-StyleDictionary.registerTransform({
-  name: 'name/with-path-prefix',
-  type: 'name',
-  transformer: function (prop) {
-    const file = prop.filePath.split('/').pop().replace('.json', '');
-    const fileKey = file.toLowerCase().replace(/\s+/g, '').replace(/\./g, '');
-    const pathKey = prop.path.join('-').toLowerCase();
-    return `tw-${fileKey}-${pathKey}`;
-  }
-});
-
-// Grupo de transformación que aplica el nombre seguro
-StyleDictionary.registerTransformGroup({
-  name: 'custom/css-unique-path',
-  transforms: ['attribute/cti', 'name/with-path-prefix', 'color/css']
-});
-
-// Formato modular con atributos por colección/modo
+// Formato: agrupa por [data-theme="collection"][data-mode="mode"]
 StyleDictionary.registerFormat({
-  name: 'custom/css-theme-modular',
+  name: 'custom/css-theme-mode-attributes',
   formatter: function ({ dictionary }) {
     let root = ':root {\n';
     const blocks = {};
@@ -34,7 +16,7 @@ StyleDictionary.registerFormat({
       const mode = match?.[2]?.toLowerCase().replace(/\s+/g, '').replace(/\./g, '') || 'base';
 
       const key = `${collection}|${mode}`;
-      const varName = `--${prop.name}`;
+      const varName = `--tw-${collection}-${mode}-${prop.path.join('-').toLowerCase()}`;
 
       if (mode === 'base') {
         root += `  ${varName}: ${prop.value};\n`;
@@ -49,7 +31,7 @@ StyleDictionary.registerFormat({
     const themeBlocks = Object.entries(blocks)
       .map(([key, content]) => {
         const [collection, mode] = key.split('|');
-        return `[data-${collection}="${mode}"] {\n${content}}\n\n`;
+        return `[data-theme="${collection}"][data-mode="${mode}"] {\n${content}}\n\n`;
       })
       .join('');
 
