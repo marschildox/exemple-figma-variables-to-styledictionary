@@ -1,11 +1,24 @@
 :root {
 }
 
+[data-theme="borderradius"][data-mode="l"] {
+}
+
+[data-theme="borderradius"][data-mode="m"] {
+}
+
+[data-theme="borderradius"][data-mode="s"] {
+}
+
+[data-theme="borderradius"][data-mode="square"] {
+}
+
 [data-theme="borderradius"][data-mode="xl-rounded"] {
   --borderradiusxl-rounded-General-Border_radius: 32;
   --borderradiusxl-rounded-Cards-Border_radius: 32;
   --borderradiusxl-rounded-Internal image-Border_radius: 24;
 }
+
 
 [data-theme="borderradiusprimitives"][data-mode="mode1"] {
   --borderradiusprimitivesmode1-radius_0px: 0;
@@ -16,6 +29,7 @@
   --borderradiusprimitivesmode1-radius_24px: 24;
   --borderradiusprimitivesmode1-radius_32px: 32;
 }
+
 
 [data-theme="colorprimitives"][data-mode="mode1"] {
   --colorprimitivesmode1-Blue-50: #f0efff;
@@ -201,27 +215,23 @@
   --colorprimitivesmode1-Verdezul-500 - 14: #57cc9924;
 }
 
-[data-theme="statesoverlay"][data-mode="blue"] {
-  --statesoverlayblue-White-Hover: #ffffff0a;
-  --statesoverlayblue-White-Focused: #ffffff1f;
-  --statesoverlayblue-White-Pressed: #ffffff1a;
-  --statesoverlayblue-White-Dragged: #ffffff14;
-  --statesoverlayblue-White-Selected: #ffffff14;
-  --statesoverlayblue-Black-Hover: #1a1a1a0a;
-  --statesoverlayblue-Black-Focused: #1a1a1a1f;
-  --statesoverlayblue-Black-Pressed: #1a1a1a1a;
-  --statesoverlayblue-Black-Dragged: #1a1a1a14;
-  --statesoverlayblue-Black-Selected: #1a1a1a14;
-  --statesoverlayblue-Primary-Hover: #4f68f90a;
-  --statesoverlayblue-Primary-Focused: #4f68f91f;
-  --statesoverlayblue-Primary-Pressed: #4f68f91a;
-  --statesoverlayblue-Primary-Dragged: #4f68f914;
-  --statesoverlayblue-Primary-Selected: #4f68f914;
-  --statesoverlayblue-Error-Hover: #b012120a;
-  --statesoverlayblue-Error-Focused: #b012121f;
-  --statesoverlayblue-Error-Pressed: #b012121a;
-  --statesoverlayblue-Error-Dragged: #b0121214;
-  --statesoverlayblue-Error-Selected: #b0121214;
+
+[data-theme="semanticcolors"][data-mode="asiaverdezul"] {
+}
+
+[data-theme="semanticcolors"][data-mode="asiático"] {
+}
+
+[data-theme="semanticcolors"][data-mode="gubernamental"] {
+}
+
+[data-theme="semanticcolors"][data-mode="kawaii"] {
+}
+
+[data-theme="semanticcolors"][data-mode="modern"] {
+}
+
+[data-theme="semanticcolors"][data-mode="musulmán"] {
 }
 
 [data-theme="semanticcolors"][data-mode="occidental"] {
@@ -288,6 +298,37 @@
   --semanticcolorsoccidental-Warning-900: #4c2900;
 }
 
+
+[data-theme="statesoverlay"][data-mode="blue"] {
+  --statesoverlayblue-White-Hover: #ffffff0a;
+  --statesoverlayblue-White-Focused: #ffffff1f;
+  --statesoverlayblue-White-Pressed: #ffffff1a;
+  --statesoverlayblue-White-Dragged: #ffffff14;
+  --statesoverlayblue-White-Selected: #ffffff14;
+  --statesoverlayblue-Black-Hover: #1a1a1a0a;
+  --statesoverlayblue-Black-Focused: #1a1a1a1f;
+  --statesoverlayblue-Black-Pressed: #1a1a1a1a;
+  --statesoverlayblue-Black-Dragged: #1a1a1a14;
+  --statesoverlayblue-Black-Selected: #1a1a1a14;
+  --statesoverlayblue-Primary-Hover: #4f68f90a;
+  --statesoverlayblue-Primary-Focused: #4f68f91f;
+  --statesoverlayblue-Primary-Pressed: #4f68f91a;
+  --statesoverlayblue-Primary-Dragged: #4f68f914;
+  --statesoverlayblue-Primary-Selected: #4f68f914;
+  --statesoverlayblue-Error-Hover: #b012120a;
+  --statesoverlayblue-Error-Focused: #b012121f;
+  --statesoverlayblue-Error-Pressed: #b012121a;
+  --statesoverlayblue-Error-Dragged: #b0121214;
+  --statesoverlayblue-Error-Selected: #b0121214;
+}
+
+
+[data-theme="spacing"][data-mode="condensed"] {
+}
+
+[data-theme="spacing"][data-mode="expanded"] {
+}
+
 [data-theme="spacing"][data-mode="standard"] {
   --spacingstandard-spacing-xs: 8;
   --spacingstandard-spacing-sm: 12;
@@ -295,6 +336,7 @@
   --spacingstandard-spacing-lg: 24;
   --spacingstandard-spacing-xl: 32;
 }
+
 
 [data-theme="surfacesoverlay"][data-mode="blue"] {
   --surfacesoverlayblue-Neutral Based-0: #ffffff;
@@ -317,6 +359,7 @@
   --surfacesoverlayblue-Secondary Based-5: #1d915924;
 }
 
+
 [data-theme="textcolors"][data-mode="mode1"] {
   --textcolorsmode1-On Surface-Hight Emphasis: #1a1a1af5;
   --textcolorsmode1-On Surface-Medium Emphasis: #1a1a1ac2;
@@ -326,6 +369,7 @@
   --textcolorsmode1-On Primary - dark-Disabled: #ffffff99;
   --textcolorsmode1-Hyperlink-Hyperlink: #276ee5;
 }
+
 
 [data-theme="typography"][data-mode="mode1"] {
   --typographymode1-Hero-Font Family: Josefin Sans;
@@ -390,6 +434,10 @@
   --typographymode1-Caption-Font strong: 600;
 }
 
+
+[data-theme="typographyprimitives"][data-mode="mode1"] {
+}
+
 [data-theme="typographyprimitives"][data-mode="modern"] {
   --typographyprimitivesmodern-Font Family-Family Title: Josefin Sans;
   --typographyprimitivesmodern-Font Family-Family Body: Source Sans 3;
@@ -424,5 +472,4 @@
   --typographyprimitivesmodern-Style-Extra Bold Italic: Extra Bold Italic;
   --typographyprimitivesmodern-Style-Black Italic: Black Italic;
 }
-
-/* Generated: 2025-06-16T15:17:15.681Z */
+/* Generated: 2025-06-16T15:21:20.011Z */
