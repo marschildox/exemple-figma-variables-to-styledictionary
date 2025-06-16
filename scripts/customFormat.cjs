@@ -1,33 +1,32 @@
-
 const StyleDictionary = require('style-dictionary');
 const path = require('path');
 
 StyleDictionary.registerFormat({
-  name: 'custom/css-themes',
+  name: 'custom/css-by-collection',
   formatter: function ({ dictionary }) {
     let root = ':root {\n';
-    const themes = {};
+    const blocks = {};
 
     dictionary.allProperties.forEach(prop => {
-      const filename = prop.filePath.split('/').pop();
-      const match = filename.match(/^(.+)\.([^.]+)\.json$/); // Grupo 1 = categoría, Grupo 2 = modo
-      const category = match?.[1]?.toLowerCase().replace(/\s+/g, '') || null;
-      const rawMode = match?.[2] || 'base';
-      const mode = rawMode.toLowerCase().replace(/\s+/g, '');
-      const themeKey = category && mode !== 'base' ? `${category}-${mode}` : null;
-      const varName = `--tw-${prop.name.replace(/\./g, '-')}`;
+      const filepath = prop.filePath.split('/').pop(); // e.g. Color Primitives.Mode 1.json
+      const cleanName = filepath.replace('.json', '')
+                                .toLowerCase()
+                                .replace(/\\s+/g, '')       // elimina espacios
+                                .replace(/\\./g, '-')        // convierte punto a guion
+                                .replace(/[^a-z0-9\\-]/g, ''); // limpia símbolos
+      const varName = `--tw-${prop.name.replace(/\\./g, '-')}`;
 
-      if (!themeKey) {
+      if (!cleanName || cleanName === 'base') {
         root += `  ${varName}: ${prop.value};\n`;
       } else {
-        if (!themes[themeKey]) themes[themeKey] = '';
-        themes[themeKey] += `  ${varName}: ${prop.value};\n`;
+        if (!blocks[cleanName]) blocks[cleanName] = '';
+        blocks[cleanName] += `  ${varName}: ${prop.value};\n`;
       }
     });
 
     root += '}\n\n';
 
-    const themeBlocks = Object.entries(themes)
+    const themeBlocks = Object.entries(blocks)
       .map(([key, content]) => `[data-theme="${key}"] {\n${content}}\n\n`)
       .join('');
 
