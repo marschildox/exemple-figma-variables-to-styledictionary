@@ -1,0 +1,53 @@
+{
+  "General": {
+    "Border_radius": {
+      "type": "number",
+      "value": "{radius_0px}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "General-Border_radius"
+    }
+  },
+  "Cards": {
+    "Border_radius": {
+      "type": "number",
+      "value": "{radius_0px}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Cards-Border_radius"
+    }
+  },
+  "Internal image": {
+    "Border_radius": {
+      "type": "number",
+      "value": "{radius_0px}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Internal image-Border_radius"
+    }
+  }
+}

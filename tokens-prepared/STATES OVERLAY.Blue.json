@@ -1,0 +1,330 @@
+{
+  "Primary": {
+    "Hover": {
+      "type": "color",
+      "value": "{Primary.Primary-4%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Primary-Hover"
+    },
+    "Focused": {
+      "type": "color",
+      "value": "{Primary.Primary-12%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Primary-Focused"
+    },
+    "Pressed": {
+      "type": "color",
+      "value": "{Primary.Primary-10%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Primary-Pressed"
+    },
+    "Dragged": {
+      "type": "color",
+      "value": "{Primary.Primary-8%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Primary-Dragged"
+    },
+    "Selected": {
+      "type": "color",
+      "value": "{Primary.Primary-8%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Primary-Selected"
+    }
+  },
+  "Black": {
+    "Hover": {
+      "type": "color",
+      "value": "{Black.000000-4%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Black-Hover"
+    },
+    "Focused": {
+      "type": "color",
+      "value": "{Black.000000-12%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Black-Focused"
+    },
+    "Pressed": {
+      "type": "color",
+      "value": "{Black.000000-10%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Black-Pressed"
+    },
+    "Dragged": {
+      "type": "color",
+      "value": "{Black.000000-8%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Black-Dragged"
+    },
+    "Selected": {
+      "type": "color",
+      "value": "{Black.000000-8%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Black-Selected"
+    }
+  },
+  "White": {
+    "Hover": {
+      "type": "color",
+      "value": "{White.FFFFFF-4%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "White-Hover"
+    },
+    "Focused": {
+      "type": "color",
+      "value": "{White.FFFFFF-12%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "White-Focused"
+    },
+    "Pressed": {
+      "type": "color",
+      "value": "{White.FFFFFF-10%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "White-Pressed"
+    },
+    "Dragged": {
+      "type": "color",
+      "value": "{White.FFFFFF-8%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "White-Dragged"
+    },
+    "Selected": {
+      "type": "color",
+      "value": "{White.FFFFFF-8%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "White-Selected"
+    }
+  },
+  "Error": {
+    "Hover": {
+      "type": "color",
+      "value": "{Red.500-4%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Error-Hover"
+    },
+    "Focused": {
+      "type": "color",
+      "value": "{Red.500-12%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Error-Focused"
+    },
+    "Pressed": {
+      "type": "color",
+      "value": "{Red.500-10%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Error-Pressed"
+    },
+    "Dragged": {
+      "type": "color",
+      "value": "{Red.500-8%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Error-Dragged"
+    },
+    "Selected": {
+      "type": "color",
+      "value": "{Red.500-8%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Error-Selected"
+    }
+  }
+}
