@@ -13,7 +13,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "General-Border_radius"
+      "name": "border radius.l-General-Border_radius"
     }
   },
   "Cards": {
@@ -30,7 +30,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Cards-Border_radius"
+      "name": "border radius.l-Cards-Border_radius"
     }
   },
   "Internal image": {
@@ -47,7 +47,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Internal image-Border_radius"
+      "name": "border radius.l-Internal image-Border_radius"
     }
   }
 }

@@ -14,7 +14,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Primary-Hover"
+      "name": "states overlay.blue-Primary-Hover"
     },
     "Focused": {
       "type": "color",
@@ -30,7 +30,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Primary-Focused"
+      "name": "states overlay.blue-Primary-Focused"
     },
     "Pressed": {
       "type": "color",
@@ -46,7 +46,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Primary-Pressed"
+      "name": "states overlay.blue-Primary-Pressed"
     },
     "Dragged": {
       "type": "color",
@@ -62,7 +62,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Primary-Dragged"
+      "name": "states overlay.blue-Primary-Dragged"
     },
     "Selected": {
       "type": "color",
@@ -78,7 +78,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Primary-Selected"
+      "name": "states overlay.blue-Primary-Selected"
     }
   },
   "Black": {
@@ -96,7 +96,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Black-Hover"
+      "name": "states overlay.blue-Black-Hover"
     },
     "Focused": {
       "type": "color",
@@ -112,7 +112,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Black-Focused"
+      "name": "states overlay.blue-Black-Focused"
     },
     "Pressed": {
       "type": "color",
@@ -128,7 +128,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Black-Pressed"
+      "name": "states overlay.blue-Black-Pressed"
     },
     "Dragged": {
       "type": "color",
@@ -144,7 +144,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Black-Dragged"
+      "name": "states overlay.blue-Black-Dragged"
     },
     "Selected": {
       "type": "color",
@@ -160,7 +160,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Black-Selected"
+      "name": "states overlay.blue-Black-Selected"
     }
   },
   "White": {
@@ -178,7 +178,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "White-Hover"
+      "name": "states overlay.blue-White-Hover"
     },
     "Focused": {
       "type": "color",
@@ -194,7 +194,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "White-Focused"
+      "name": "states overlay.blue-White-Focused"
     },
     "Pressed": {
       "type": "color",
@@ -210,7 +210,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "White-Pressed"
+      "name": "states overlay.blue-White-Pressed"
     },
     "Dragged": {
       "type": "color",
@@ -226,7 +226,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "White-Dragged"
+      "name": "states overlay.blue-White-Dragged"
     },
     "Selected": {
       "type": "color",
@@ -242,7 +242,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "White-Selected"
+      "name": "states overlay.blue-White-Selected"
     }
   },
   "Error": {
@@ -260,7 +260,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Error-Hover"
+      "name": "states overlay.blue-Error-Hover"
     },
     "Focused": {
       "type": "color",
@@ -276,7 +276,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Error-Focused"
+      "name": "states overlay.blue-Error-Focused"
     },
     "Pressed": {
       "type": "color",
@@ -292,7 +292,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Error-Pressed"
+      "name": "states overlay.blue-Error-Pressed"
     },
     "Dragged": {
       "type": "color",
@@ -308,7 +308,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Error-Dragged"
+      "name": "states overlay.blue-Error-Dragged"
     },
     "Selected": {
       "type": "color",
@@ -324,7 +324,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Error-Selected"
+      "name": "states overlay.blue-Error-Selected"
     }
   }
 }

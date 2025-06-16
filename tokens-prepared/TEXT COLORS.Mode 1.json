@@ -16,7 +16,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "On Surface-Hight Emphasis"
+      "name": "text colors.mode 1-On Surface-Hight Emphasis"
     },
     "Medium Emphasis": {
       "type": "color",
@@ -34,7 +34,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "On Surface-Medium Emphasis"
+      "name": "text colors.mode 1-On Surface-Medium Emphasis"
     },
     "Disabled": {
       "type": "color",
@@ -52,7 +52,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "On Surface-Disabled"
+      "name": "text colors.mode 1-On Surface-Disabled"
     }
   },
   "On Primary - dark": {
@@ -72,7 +72,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "On Primary - dark-Hight Emphasis"
+      "name": "text colors.mode 1-On Primary - dark-Hight Emphasis"
     },
     "Medium Emphasis": {
       "type": "color",
@@ -90,7 +90,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "On Primary - dark-Medium Emphasis"
+      "name": "text colors.mode 1-On Primary - dark-Medium Emphasis"
     },
     "Disabled": {
       "type": "color",
@@ -108,7 +108,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "On Primary - dark-Disabled"
+      "name": "text colors.mode 1-On Primary - dark-Disabled"
     }
   },
   "Hyperlink": {
@@ -127,7 +127,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Hyperlink-Hyperlink"
+      "name": "text colors.mode 1-Hyperlink-Hyperlink"
     }
   }
 }

@@ -11,7 +11,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Font Family-Family Title"
+      "name": "typography primitives.mode 1-Font Family-Family Title"
     },
     "Family Body": {
       "type": "string",
@@ -24,7 +24,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Font Family-Family Body"
+      "name": "typography primitives.mode 1-Font Family-Family Body"
     },
     "Family Button": {
       "type": "string",
@@ -37,7 +37,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Font Family-Family Button"
+      "name": "typography primitives.mode 1-Font Family-Family Button"
     }
   },
   "Size": {
@@ -52,7 +52,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Size-Size-10"
+      "name": "typography primitives.mode 1-Size-Size-10"
     },
     "Size-12": {
       "type": "number",
@@ -65,7 +65,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Size-Size-12"
+      "name": "typography primitives.mode 1-Size-Size-12"
     },
     "Size-14": {
       "type": "number",
@@ -78,7 +78,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Size-Size-14"
+      "name": "typography primitives.mode 1-Size-Size-14"
     },
     "Size-16": {
       "type": "number",
@@ -91,7 +91,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Size-Size-16"
+      "name": "typography primitives.mode 1-Size-Size-16"
     },
     "Size-18": {
       "type": "number",
@@ -104,7 +104,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Size-Size-18"
+      "name": "typography primitives.mode 1-Size-Size-18"
     },
     "Size-20": {
       "type": "number",
@@ -117,7 +117,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Size-Size-20"
+      "name": "typography primitives.mode 1-Size-Size-20"
     },
     "Size-24": {
       "type": "number",
@@ -130,7 +130,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Size-Size-24"
+      "name": "typography primitives.mode 1-Size-Size-24"
     },
     "Size-32": {
       "type": "number",
@@ -143,7 +143,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Size-Size-32"
+      "name": "typography primitives.mode 1-Size-Size-32"
     },
     "Size-40": {
       "type": "number",
@@ -156,7 +156,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Size-Size-40"
+      "name": "typography primitives.mode 1-Size-Size-40"
     },
     "Size-48": {
       "type": "number",
@@ -169,7 +169,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Size-Size-48"
+      "name": "typography primitives.mode 1-Size-Size-48"
     },
     "Size-64": {
       "type": "number",
@@ -182,7 +182,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Size-Size-64"
+      "name": "typography primitives.mode 1-Size-Size-64"
     },
     "Size-72": {
       "type": "number",
@@ -195,7 +195,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Size-Size-72"
+      "name": "typography primitives.mode 1-Size-Size-72"
     }
   },
   "Weight": {
@@ -210,7 +210,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Weight-Weight-100-thin"
+      "name": "typography primitives.mode 1-Weight-Weight-100-thin"
     },
     "Weight-200-extralight": {
       "type": "number",
@@ -223,7 +223,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Weight-Weight-200-extralight"
+      "name": "typography primitives.mode 1-Weight-Weight-200-extralight"
     },
     "Weight-300-light": {
       "type": "number",
@@ -236,7 +236,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Weight-Weight-300-light"
+      "name": "typography primitives.mode 1-Weight-Weight-300-light"
     },
     "Weight-400-regular": {
       "type": "number",
@@ -249,7 +249,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Weight-Weight-400-regular"
+      "name": "typography primitives.mode 1-Weight-Weight-400-regular"
     },
     "Weight-500-medium": {
       "type": "number",
@@ -262,7 +262,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Weight-Weight-500-medium"
+      "name": "typography primitives.mode 1-Weight-Weight-500-medium"
     },
     "Weight-600-semibold": {
       "type": "number",
@@ -275,7 +275,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Weight-Weight-600-semibold"
+      "name": "typography primitives.mode 1-Weight-Weight-600-semibold"
     },
     "Weight-700-bold": {
       "type": "number",
@@ -288,7 +288,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Weight-Weight-700-bold"
+      "name": "typography primitives.mode 1-Weight-Weight-700-bold"
     },
     "Weight-800-extrabold": {
       "type": "number",
@@ -301,7 +301,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Weight-Weight-800-extrabold"
+      "name": "typography primitives.mode 1-Weight-Weight-800-extrabold"
     },
     "Weight-900-black": {
       "type": "number",
@@ -314,7 +314,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Weight-Weight-900-black"
+      "name": "typography primitives.mode 1-Weight-Weight-900-black"
     }
   },
   "Style": {
@@ -329,7 +329,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Style-Thin Italic"
+      "name": "typography primitives.mode 1-Style-Thin Italic"
     },
     "Extra ligh Italic": {
       "type": "string",
@@ -342,7 +342,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Style-Extra ligh Italic"
+      "name": "typography primitives.mode 1-Style-Extra ligh Italic"
     },
     "Light Italic": {
       "type": "string",
@@ -355,7 +355,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Style-Light Italic"
+      "name": "typography primitives.mode 1-Style-Light Italic"
     },
     "Medium Italic": {
       "type": "string",
@@ -368,7 +368,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Style-Medium Italic"
+      "name": "typography primitives.mode 1-Style-Medium Italic"
     },
     "Semi Bold Italic": {
       "type": "string",
@@ -381,7 +381,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Style-Semi Bold Italic"
+      "name": "typography primitives.mode 1-Style-Semi Bold Italic"
     },
     "Bold Italic": {
       "type": "string",
@@ -394,7 +394,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Style-Bold Italic"
+      "name": "typography primitives.mode 1-Style-Bold Italic"
     },
     "Extra Bold Italic": {
       "type": "string",
@@ -407,7 +407,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Style-Extra Bold Italic"
+      "name": "typography primitives.mode 1-Style-Extra Bold Italic"
     },
     "Black Italic": {
       "type": "string",
@@ -420,7 +420,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "Style-Black Italic"
+      "name": "typography primitives.mode 1-Style-Black Italic"
     }
   }
 }
