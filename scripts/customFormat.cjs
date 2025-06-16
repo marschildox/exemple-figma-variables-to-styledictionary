@@ -1,3 +1,4 @@
+
 const StyleDictionary = require('style-dictionary');
 const path = require('path');
 
@@ -9,16 +10,16 @@ StyleDictionary.registerFormat({
 
     dictionary.allProperties.forEach(prop => {
       const filename = prop.filePath.split('/').pop();
-      const match = filename.match(/^(.+)\.([^.]+)\.json$/); // grupo 1 = categoría, grupo 2 = modo
+      const match = filename.match(/^(.+)\.([^.]+)\.json$/); // Grupo 1 = categoría, Grupo 2 = modo
       const category = match?.[1]?.toLowerCase().replace(/\s+/g, '') || null;
       const rawMode = match?.[2] || 'base';
       const mode = rawMode.toLowerCase().replace(/\s+/g, '');
+      const themeKey = category && mode !== 'base' ? `${category}-${mode}` : null;
       const varName = `--tw-${prop.name.replace(/\./g, '-')}`;
 
-      if (!category || mode === 'base') {
+      if (!themeKey) {
         root += `  ${varName}: ${prop.value};\n`;
       } else {
-        const themeKey = `${category}-${mode}`; // usamos un solo guion como separador entre categoría y modo
         if (!themes[themeKey]) themes[themeKey] = '';
         themes[themeKey] += `  ${varName}: ${prop.value};\n`;
       }
