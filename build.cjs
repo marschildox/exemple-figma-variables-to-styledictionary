@@ -1,5 +1,5 @@
 // build.js
-require('./scripts/customFormat'); // registra el nuevo formato
+require('./scripts/customFormat.cjs');
 
 const StyleDictionary = require('style-dictionary').extend('./config.json');
 StyleDictionary.buildAllPlatforms();
