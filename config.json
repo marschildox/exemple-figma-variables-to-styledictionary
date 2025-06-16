@@ -1,10 +1,10 @@
 {
   "source": [
-    "tokens/**/*.json"
+    "tokens-prepared/**/*.json"
   ],
   "platforms": {
     "css": {
-      "transformGroup": "custom/css-prefixed-names",
+      "transformGroup": "custom/css-unique-path",
       "buildPath": "build/css/",
       "files": [
         {
