@@ -1,7 +1,13 @@
 :root {
+}
+
+[data-theme="xl---rounded"] {
   --tw-general-border-radius: 32;
   --tw-cards-border-radius: 32;
   --tw-internal-image-border-radius: 24;
+}
+
+[data-theme="mode-1"] {
   --tw-radius-0px: 0;
   --tw-radius-2px: 2;
   --tw-radius-4px: 4;
@@ -156,11 +162,6 @@
   --tw-white-ffffff-12: #ffffff1f;
   --tw-white-ffffff-38: #ffffff99;
   --tw-white-ffffff-74: #ffffffcc;
-  --tw-white-hover: #ffffff0a;
-  --tw-white-focused: #ffffff1f;
-  --tw-white-pressed: #ffffff1a;
-  --tw-white-dragged: #ffffff14;
-  --tw-white-selected: #ffffff14;
   --tw-black-000: #1a1a1a;
   --tw-black-000000-4: #1a1a1a0a;
   --tw-black-000000-8: #1a1a1a14;
@@ -169,11 +170,6 @@
   --tw-black-000000-62: #1a1a1a9e;
   --tw-black-000000-76: #1a1a1ac2;
   --tw-black-000000-96: #1a1a1af5;
-  --tw-black-hover: #1a1a1a0a;
-  --tw-black-focused: #1a1a1a1f;
-  --tw-black-pressed: #1a1a1a1a;
-  --tw-black-dragged: #1a1a1a14;
-  --tw-black-selected: #1a1a1a14;
   --tw-purple-50: #e3c1e8;
   --tw-purple-100: #cf98d8;
   --tw-purple-300: #bd70c8;
@@ -200,39 +196,6 @@
   --tw-verdezul-500-11: #57cc991c;
   --tw-verdezul-500-12: #57cc991f;
   --tw-verdezul-500-14: #57cc9924;
-  --tw-primary-hover: #4f68f90a;
-  --tw-primary-focused: #4f68f91f;
-  --tw-primary-pressed: #4f68f91a;
-  --tw-primary-dragged: #4f68f914;
-  --tw-primary-selected: #4f68f914;
-  --tw-error-hover: #b012120a;
-  --tw-error-focused: #b012121f;
-  --tw-error-pressed: #b012121a;
-  --tw-error-dragged: #b0121214;
-  --tw-error-selected: #b0121214;
-  --tw-spacing-xs: 8;
-  --tw-spacing-sm: 12;
-  --tw-spacing-md: 16;
-  --tw-spacing-lg: 24;
-  --tw-spacing-xl: 32;
-  --tw-neutral-based-0: #ffffff;
-  --tw-neutral-based-1: #7b848c0d;
-  --tw-neutral-based-2: #7b848c14;
-  --tw-neutral-based-3: #7b848c1f;
-  --tw-neutral-based-4: #7b848c26;
-  --tw-neutral-based-5: #7b848c2e;
-  --tw-primary-based-0: #ffffff;
-  --tw-primary-based-1: #4f68f90d;
-  --tw-primary-based-2: #4f68f914;
-  --tw-primary-based-3: #4f68f91c;
-  --tw-primary-based-4: #4f68f91f;
-  --tw-primary-based-5: #4f68f924;
-  --tw-secondary-based-0: #ffffff;
-  --tw-secondary-based-1: #1d91590d;
-  --tw-secondary-based-2: #1d915914;
-  --tw-secondary-based-3: #1d91591c;
-  --tw-secondary-based-4: #1d91591f;
-  --tw-secondary-based-5: #1d915924;
   --tw-on-surface-hight-emphasis: #1a1a1af5;
   --tw-on-surface-medium-emphasis: #1a1a1ac2;
   --tw-on-surface-disabled: #1a1a1a9e;
@@ -302,6 +265,47 @@
   --tw-caption-font-strong: 600;
 }
 
+[data-theme="blue"] {
+  --tw-white-hover: #ffffff0a;
+  --tw-white-focused: #ffffff1f;
+  --tw-white-pressed: #ffffff1a;
+  --tw-white-dragged: #ffffff14;
+  --tw-white-selected: #ffffff14;
+  --tw-black-hover: #1a1a1a0a;
+  --tw-black-focused: #1a1a1a1f;
+  --tw-black-pressed: #1a1a1a1a;
+  --tw-black-dragged: #1a1a1a14;
+  --tw-black-selected: #1a1a1a14;
+  --tw-primary-hover: #4f68f90a;
+  --tw-primary-focused: #4f68f91f;
+  --tw-primary-pressed: #4f68f91a;
+  --tw-primary-dragged: #4f68f914;
+  --tw-primary-selected: #4f68f914;
+  --tw-error-hover: #b012120a;
+  --tw-error-focused: #b012121f;
+  --tw-error-pressed: #b012121a;
+  --tw-error-dragged: #b0121214;
+  --tw-error-selected: #b0121214;
+  --tw-neutral-based-0: #ffffff;
+  --tw-neutral-based-1: #7b848c0d;
+  --tw-neutral-based-2: #7b848c14;
+  --tw-neutral-based-3: #7b848c1f;
+  --tw-neutral-based-4: #7b848c26;
+  --tw-neutral-based-5: #7b848c2e;
+  --tw-primary-based-0: #ffffff;
+  --tw-primary-based-1: #4f68f90d;
+  --tw-primary-based-2: #4f68f914;
+  --tw-primary-based-3: #4f68f91c;
+  --tw-primary-based-4: #4f68f91f;
+  --tw-primary-based-5: #4f68f924;
+  --tw-secondary-based-0: #ffffff;
+  --tw-secondary-based-1: #1d91590d;
+  --tw-secondary-based-2: #1d915914;
+  --tw-secondary-based-3: #1d91591c;
+  --tw-secondary-based-4: #1d91591f;
+  --tw-secondary-based-5: #1d915924;
+}
+
 [data-theme="occidental"] {
   --tw-primary-50: #f0efff;
   --tw-primary-100: #dee0ff;
@@ -366,6 +370,14 @@
   --tw-warning-900: #4c2900;
 }
 
+[data-theme="standard"] {
+  --tw-spacing-xs: 8;
+  --tw-spacing-sm: 12;
+  --tw-spacing-md: 16;
+  --tw-spacing-lg: 24;
+  --tw-spacing-xl: 32;
+}
+
 [data-theme="modern"] {
   --tw-font-family-family-title: Josefin Sans;
   --tw-font-family-family-body: Source Sans 3;
@@ -401,4 +413,4 @@
   --tw-style-black-italic: Black Italic;
 }
 
-/* Generated: 2025-06-16T10:40:46.173Z */
+/* Generated: 2025-06-16T10:49:28.392Z */
