@@ -4,12 +4,12 @@
   ],
   "platforms": {
     "css": {
-      "transformGroup": "custom/css-namespaced",
+      "transformGroup": "custom/css-prefixed-names",
       "buildPath": "build/css/",
       "files": [
         {
           "destination": "variables.css",
-          "format": "custom/css-by-collection"
+          "format": "custom/css-theme-modular"
         }
       ]
     }
