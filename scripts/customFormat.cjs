@@ -8,7 +8,7 @@ StyleDictionary.registerTransformGroup({
   transforms: ['attribute/cti', 'color/css']
 });
 
-// Formato CSS modular con data-theme y data-mode
+// Formato CSS modular con [data-theme="..."][data-mode="..."], tolerante con puntos
 StyleDictionary.registerFormat({
   name: 'custom/css-theme-mode-attributes',
   formatter: function ({ dictionary }) {
@@ -17,12 +17,13 @@ StyleDictionary.registerFormat({
 
     dictionary.allProperties.forEach(prop => {
       const filename = prop.filePath.split('/').pop();
-      const match = filename.match(/^(.+)\.([^.]+)\.json$/); // grupo 1 = colección, grupo 2 = modo
-      const collection = match?.[1]?.toLowerCase().replace(/\s+/g, '').replace(/\./g, '') || 'unknown';
-      const mode = match?.[2]?.toLowerCase().replace(/\s+/g, '').replace(/\./g, '') || 'base';
+      const cleanName = filename.replace('.json', '');
+      const parts = cleanName.split('.');
+      const mode = parts.pop().toLowerCase().replace(/\s+/g, '').replace(/\./g, '');
+      const collection = parts.join('').toLowerCase().replace(/\s+/g, '');
 
       const key = `${collection}|${mode}`;
-      const varName = `--${prop.name}`; // usamos name del preprocesador
+      const varName = `--${prop.name}`; // ya es único por preprocess
 
       if (mode === 'base') {
         root += `  ${varName}: ${prop.value};\n`;
