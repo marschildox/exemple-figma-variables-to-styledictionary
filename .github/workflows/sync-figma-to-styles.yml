@@ -50,7 +50,11 @@ jobs:
 
       - name: Build Style Dictionary (uses config.json to define src/dest)
         run: npm run build
-
+      - name: Ensure changes are added
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add tokens-prepared/ build/css/variables.css || true
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
