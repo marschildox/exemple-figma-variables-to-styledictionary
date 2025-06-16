@@ -9,23 +9,25 @@ StyleDictionary.registerFormat({
 
     dictionary.allProperties.forEach(prop => {
       const filename = prop.filePath.split('/').pop(); // ej: Color Primitives.Mode 1.json
-      const match = filename.match(/\.([^.]+)\.json$/); // extrae 'Mode 1', 'Modern', etc.
-      const rawMode = match?.[1] || 'base';
-      const mode = rawMode.toLowerCase().replace(/\s+/g, '-'); // limpia espacios
+      const match = filename.match(/^(.+)\.([^.]+)\.json$/); // grupo 1 = categoría, grupo 2 = modo
+      const category = match?.[1]?.toLowerCase().replace(/\s+/g, '-') || null;
+      const rawMode = match?.[2] || 'base';
+      const mode = rawMode.toLowerCase().replace(/\s+/g, '-');
       const varName = `--tw-${prop.name.replace(/\./g, '-')}`;
 
-      if (mode === 'base') {
+      if (!category || mode === 'base') {
         root += `  ${varName}: ${prop.value};\n`;
       } else {
-        if (!themes[mode]) themes[mode] = '';
-        themes[mode] += `  ${varName}: ${prop.value};\n`;
+        const themeKey = `${category}-${mode}`;
+        if (!themes[themeKey]) themes[themeKey] = '';
+        themes[themeKey] += `  ${varName}: ${prop.value};\n`;
       }
     });
 
     root += '}\n\n';
 
     const themeBlocks = Object.entries(themes)
-      .map(([mode, content]) => `[data-theme="${mode}"] {\n${content}}\n\n`)
+      .map(([key, content]) => `[data-theme="${key}"] {\n${content}}\n\n`)
       .join('');
 
     const timestamp = `/* Generated: ${new Date().toISOString()} */\n`;
