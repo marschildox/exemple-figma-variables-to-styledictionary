@@ -1,0 +1,45 @@
+{
+  "borderradius": [
+    "l",
+    "m",
+    "s",
+    "square",
+    "xl-rounded"
+  ],
+  "borderradiusprimitives": [
+    "mode1"
+  ],
+  "colorprimitives": [
+    "mode1"
+  ],
+  "semanticcolors": [
+    "asiaverdezul",
+    "asiático",
+    "gubernamental",
+    "kawaii",
+    "modern",
+    "musulmán",
+    "occidental"
+  ],
+  "statesoverlay": [
+    "blue"
+  ],
+  "spacing": [
+    "condensed",
+    "expanded",
+    "standard"
+  ],
+  "surfacesoverlay": [
+    "blue"
+  ],
+  "textcolors": [
+    "mode1"
+  ],
+  "typography": [
+    "mode1"
+  ],
+  "typographyprimitives": [
+    "mode1",
+    "modern"
+  ]
+}
