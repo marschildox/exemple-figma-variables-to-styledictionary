@@ -1,10 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-
-for f in tokens/*.json; 
-
-do echo "Processing $f"; 
-sed -i 's/\$//g' $f;
-
+# Recorre *cualquier* JSON dentro de tokens/, sin importar subcarpetas
+find tokens -type f -name '*.json' -print0 | while IFS= read -r -d '' file
+do
+  echo "Processing $file"
+  sed -i 's/\$//g' "$file"          # comillas ⇒ admite espacios, acentos, etc.
 done
-
