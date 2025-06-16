@@ -1,3 +1,4 @@
+
 const StyleDictionary = require('style-dictionary');
 const path = require('path');
 
@@ -11,10 +12,11 @@ StyleDictionary.registerFormat({
       const filepath = prop.filePath.split('/').pop(); // e.g. Color Primitives.Mode 1.json
       const cleanName = filepath.replace('.json', '')
                                 .toLowerCase()
-                                .replace(/\\s+/g, '')       // elimina espacios
-                                .replace(/\\./g, '-')        // convierte punto a guion
-                                .replace(/[^a-z0-9\\-]/g, ''); // limpia símbolos
-      const varName = `--tw-${prop.name.replace(/\\./g, '-')}`;
+                                .replace(/\s+/g, '')       // elimina espacios
+                                .replace(/\./g, '-')        // convierte punto a guion
+                                .replace(/[^a-z0-9\-]/g, ''); // limpia símbolos
+      const varPrefix = cleanName.replace(/[^a-z0-9]/gi, ''); // namespace
+      const varName = `--tw-${varPrefix}-${prop.name.replace(/\./g, '-')}`;
 
       if (!cleanName || cleanName === 'base') {
         root += `  ${varName}: ${prop.value};\n`;
