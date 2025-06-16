@@ -1,13 +1,13 @@
 :root {
 }
 
-[data-theme="border-radius-xl---rounded"] {
+[data-theme="borderradius-xl-rounded"] {
   --tw-general-border-radius: 32;
   --tw-cards-border-radius: 32;
   --tw-internal-image-border-radius: 24;
 }
 
-[data-theme="border-radius-primitives-mode-1"] {
+[data-theme="borderradiusprimitives-mode1"] {
   --tw-radius-0px: 0;
   --tw-radius-2px: 2;
   --tw-radius-4px: 4;
@@ -17,7 +17,7 @@
   --tw-radius-32px: 32;
 }
 
-[data-theme="color-primitives-mode-1"] {
+[data-theme="colorprimitives-mode1"] {
   --tw-blue-50: #f0efff;
   --tw-blue-100: #dee0ff;
   --tw-blue-300: #97a5ff;
@@ -201,7 +201,7 @@
   --tw-verdezul-500-14: #57cc9924;
 }
 
-[data-theme="states-overlay-blue"] {
+[data-theme="statesoverlay-blue"] {
   --tw-white-hover: #ffffff0a;
   --tw-white-focused: #ffffff1f;
   --tw-white-pressed: #ffffff1a;
@@ -224,7 +224,7 @@
   --tw-error-selected: #b0121214;
 }
 
-[data-theme="semantic-colors-occidental"] {
+[data-theme="semanticcolors-occidental"] {
   --tw-primary-50: #f0efff;
   --tw-primary-100: #dee0ff;
   --tw-primary-300: #97a5ff;
@@ -296,7 +296,7 @@
   --tw-spacing-xl: 32;
 }
 
-[data-theme="surfaces-overlay-blue"] {
+[data-theme="surfacesoverlay-blue"] {
   --tw-neutral-based-0: #ffffff;
   --tw-neutral-based-1: #7b848c0d;
   --tw-neutral-based-2: #7b848c14;
@@ -317,7 +317,7 @@
   --tw-secondary-based-5: #1d915924;
 }
 
-[data-theme="text-colors-mode-1"] {
+[data-theme="textcolors-mode1"] {
   --tw-on-surface-hight-emphasis: #1a1a1af5;
   --tw-on-surface-medium-emphasis: #1a1a1ac2;
   --tw-on-surface-disabled: #1a1a1a9e;
@@ -327,7 +327,7 @@
   --tw-hyperlink-hyperlink: #276ee5;
 }
 
-[data-theme="typography-mode-1"] {
+[data-theme="typography-mode1"] {
   --tw-hero-font-family: Josefin Sans;
   --tw-hero-size-lg: 72;
   --tw-hero-size-md: 64;
@@ -390,7 +390,7 @@
   --tw-caption-font-strong: 600;
 }
 
-[data-theme="typography-primitives-modern"] {
+[data-theme="typographyprimitives-modern"] {
   --tw-font-family-family-title: Josefin Sans;
   --tw-font-family-family-body: Source Sans 3;
   --tw-font-family-family-button: Source Sans 3;
@@ -425,4 +425,4 @@
   --tw-style-black-italic: Black Italic;
 }
 
-/* Generated: 2025-06-16T10:57:15.540Z */
+/* Generated: 2025-06-16T11:04:54.184Z */
