@@ -2,6 +2,24 @@
 const StyleDictionary = require('style-dictionary');
 const path = require('path');
 
+// Transformador que añade el nombre del archivo como prefijo al name
+StyleDictionary.registerTransform({
+  name: 'name/with-file',
+  type: 'name',
+  transformer: function (prop, options) {
+    const file = prop.filePath.split('/').pop().replace('.json', '');
+    const fileKey = file.toLowerCase().replace(/\s+/g, '').replace(/\./g, '-');
+    return `tw-${fileKey}-${prop.name.replace(/\./g, '-')}`;
+  }
+});
+
+// Grupo de transformación personalizado que incluye nuestro transform
+StyleDictionary.registerTransformGroup({
+  name: 'custom/css-namespaced',
+  transforms: ['attribute/cti', 'name/with-file', 'color/css']
+});
+
+// Formato para agrupar por archivo
 StyleDictionary.registerFormat({
   name: 'custom/css-by-collection',
   formatter: function ({ dictionary }) {
@@ -9,21 +27,10 @@ StyleDictionary.registerFormat({
     const blocks = {};
 
     dictionary.allProperties.forEach(prop => {
-      const filepath = prop.filePath.split('/').pop(); // e.g. Color Primitives.Mode 1.json
-      const cleanName = filepath.replace('.json', '')
-                                .toLowerCase()
-                                .replace(/\s+/g, '')       // elimina espacios
-                                .replace(/\./g, '-')        // convierte punto a guion
-                                .replace(/[^a-z0-9\-]/g, ''); // limpia símbolos
-      const varPrefix = cleanName.replace(/[^a-z0-9]/gi, ''); // namespace
-      const varName = `--tw-${varPrefix}-${prop.name.replace(/\./g, '-')}`;
-
-      if (!cleanName || cleanName === 'base') {
-        root += `  ${varName}: ${prop.value};\n`;
-      } else {
-        if (!blocks[cleanName]) blocks[cleanName] = '';
-        blocks[cleanName] += `  ${varName}: ${prop.value};\n`;
-      }
+      const file = prop.filePath.split('/').pop().replace('.json', '');
+      const key = file.toLowerCase().replace(/\s+/g, '').replace(/\./g, '-');
+      if (!blocks[key]) blocks[key] = '';
+      blocks[key] += `  --${prop.name}: ${prop.value};\n`;
     });
 
     root += '}\n\n';
@@ -32,7 +39,6 @@ StyleDictionary.registerFormat({
       .map(([key, content]) => `[data-theme="${key}"] {\n${content}}\n\n`)
       .join('');
 
-    const timestamp = `/* Generated: ${new Date().toISOString()} */\n`;
-    return root + themeBlocks + timestamp;
+    return root + themeBlocks + `/* Generated: ${new Date().toISOString()} */\n`;
   }
 });
