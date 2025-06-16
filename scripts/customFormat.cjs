@@ -3,7 +3,7 @@ const StyleDictionary = require('style-dictionary');
 const path = require('path');
 
 StyleDictionary.registerFormat({
-  name: 'custom/css-theme-mode-split',
+  name: 'custom/css-theme-modular',
   formatter: function ({ dictionary }) {
     let root = ':root {\n';
     const blocks = {};
@@ -31,7 +31,7 @@ StyleDictionary.registerFormat({
     const themeBlocks = Object.entries(blocks)
       .map(([key, content]) => {
         const [collection, mode] = key.split('|');
-        return `[data-theme="${collection}"][data-mode="${mode}"] {\n${content}}\n\n`;
+        return `[data-${collection}="${mode}"] {\n${content}}\n\n`;
       })
       .join('');
 
