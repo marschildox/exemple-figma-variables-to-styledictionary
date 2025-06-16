@@ -24,12 +24,11 @@ StyleDictionary.registerFormat({
     const blocks = {};
 
     dictionary.allProperties.forEach(prop => {
-      // Extraemos collection y mode del nombre
-      const match = prop.name.match(/^tw-([a-z0-9]+)-([a-z0-9]+)-/);
-      if (!match) return; // ignorar si no coincide
+      const parts = prop.name.split('-');
+      if (parts.length < 3) return; // asegurar prefijo + colección + modo
 
-      const collection = match[1];
-      const mode = match[2];
+      const collection = parts[1];
+      const mode = parts[2];
       const key = `${collection}${mode}`;
       const varName = `--${prop.name}`;
 
