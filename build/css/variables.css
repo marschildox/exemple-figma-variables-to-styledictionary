@@ -1,13 +1,13 @@
 :root {
 }
 
-[data-theme="xl---rounded"] {
+[data-theme="border-radius-xl---rounded"] {
   --tw-general-border-radius: 32;
   --tw-cards-border-radius: 32;
   --tw-internal-image-border-radius: 24;
 }
 
-[data-theme="mode-1"] {
+[data-theme="border-radius-primitives-mode-1"] {
   --tw-radius-0px: 0;
   --tw-radius-2px: 2;
   --tw-radius-4px: 4;
@@ -15,6 +15,9 @@
   --tw-radius-16px: 16;
   --tw-radius-24px: 24;
   --tw-radius-32px: 32;
+}
+
+[data-theme="color-primitives-mode-1"] {
   --tw-blue-50: #f0efff;
   --tw-blue-100: #dee0ff;
   --tw-blue-300: #97a5ff;
@@ -196,76 +199,9 @@
   --tw-verdezul-500-11: #57cc991c;
   --tw-verdezul-500-12: #57cc991f;
   --tw-verdezul-500-14: #57cc9924;
-  --tw-on-surface-hight-emphasis: #1a1a1af5;
-  --tw-on-surface-medium-emphasis: #1a1a1ac2;
-  --tw-on-surface-disabled: #1a1a1a9e;
-  --tw-on-primary-dark-hight-emphasis: #ffffff;
-  --tw-on-primary-dark-medium-emphasis: #ffffffcc;
-  --tw-on-primary-dark-disabled: #ffffff99;
-  --tw-hyperlink-hyperlink: #276ee5;
-  --tw-hero-font-family: Josefin Sans;
-  --tw-hero-size-lg: 72;
-  --tw-hero-size-md: 64;
-  --tw-hero-size-sm: 48;
-  --tw-hero-size-xs: 40;
-  --tw-hero-font-weight: 700;
-  --tw-hero-subtitle-font-family: Source Sans 3;
-  --tw-hero-subtitle-size-lg: 40;
-  --tw-hero-subtitle-size-md: 32;
-  --tw-hero-subtitle-size-sm: 24;
-  --tw-hero-subtitle-font-regular: 400;
-  --tw-hero-subtitle-font-strong: 700;
-  --tw-page-title-font-family: Josefin Sans;
-  --tw-page-title-size-lg: 64;
-  --tw-page-title-size-md: 48;
-  --tw-page-title-size-sm: 32;
-  --tw-page-title-font-weight: 700;
-  --tw-page-subtitle-font-family: Source Sans 3;
-  --tw-page-subtitle-size-lg: 40;
-  --tw-page-subtitle-size-md: 32;
-  --tw-page-subtitle-size-sm: 24;
-  --tw-page-subtitle-font-weight: 400;
-  --tw-section-title-font-family: Josefin Sans;
-  --tw-section-title-size-lg: 32;
-  --tw-section-title-size-md: 24;
-  --tw-section-title-size-sm: 20;
-  --tw-section-title-font-weight: 600;
-  --tw-section-subtitle-font-family: Source Sans 3;
-  --tw-section-subtitle-size-lg: 24;
-  --tw-section-subtitle-size-md: 20;
-  --tw-section-subtitle-size-sm: 16;
-  --tw-section-subtitle-font-weight: 400;
-  --tw-component-title-font-family: Source Sans 3;
-  --tw-component-title-size-lg: 32;
-  --tw-component-title-size-md: 24;
-  --tw-component-title-size-sm: 20;
-  --tw-component-title-font-weight: 600;
-  --tw-component-subtitle-font-family: Source Sans 3;
-  --tw-component-subtitle-size-lg: 24;
-  --tw-component-subtitle-size-md: 20;
-  --tw-component-subtitle-size-sm: 16;
-  --tw-component-subtitle-font-weight: 400;
-  --tw-body-font-family: Source Sans 3;
-  --tw-body-size-lg: 20;
-  --tw-body-size-md: 16;
-  --tw-body-size-sm: 14;
-  --tw-body-font-regular: 400;
-  --tw-body-font-strong: 600;
-  --tw-body-italic: Medium Italic;
-  --tw-button-font-family: Source Sans 3;
-  --tw-button-size-lg: 18;
-  --tw-button-size-md: 16;
-  --tw-button-size-sm: 14;
-  --tw-button-font-strong: 600;
-  --tw-caption-font-family: Source Sans 3;
-  --tw-caption-size-lg: 14;
-  --tw-caption-size-md: 12;
-  --tw-caption-size-sm: 10;
-  --tw-caption-font-regular: 400;
-  --tw-caption-font-strong: 600;
 }
 
-[data-theme="blue"] {
+[data-theme="states-overlay-blue"] {
   --tw-white-hover: #ffffff0a;
   --tw-white-focused: #ffffff1f;
   --tw-white-pressed: #ffffff1a;
@@ -286,27 +222,9 @@
   --tw-error-pressed: #b012121a;
   --tw-error-dragged: #b0121214;
   --tw-error-selected: #b0121214;
-  --tw-neutral-based-0: #ffffff;
-  --tw-neutral-based-1: #7b848c0d;
-  --tw-neutral-based-2: #7b848c14;
-  --tw-neutral-based-3: #7b848c1f;
-  --tw-neutral-based-4: #7b848c26;
-  --tw-neutral-based-5: #7b848c2e;
-  --tw-primary-based-0: #ffffff;
-  --tw-primary-based-1: #4f68f90d;
-  --tw-primary-based-2: #4f68f914;
-  --tw-primary-based-3: #4f68f91c;
-  --tw-primary-based-4: #4f68f91f;
-  --tw-primary-based-5: #4f68f924;
-  --tw-secondary-based-0: #ffffff;
-  --tw-secondary-based-1: #1d91590d;
-  --tw-secondary-based-2: #1d915914;
-  --tw-secondary-based-3: #1d91591c;
-  --tw-secondary-based-4: #1d91591f;
-  --tw-secondary-based-5: #1d915924;
 }
 
-[data-theme="occidental"] {
+[data-theme="semantic-colors-occidental"] {
   --tw-primary-50: #f0efff;
   --tw-primary-100: #dee0ff;
   --tw-primary-300: #97a5ff;
@@ -370,7 +288,7 @@
   --tw-warning-900: #4c2900;
 }
 
-[data-theme="standard"] {
+[data-theme="spacing-standard"] {
   --tw-spacing-xs: 8;
   --tw-spacing-sm: 12;
   --tw-spacing-md: 16;
@@ -378,7 +296,101 @@
   --tw-spacing-xl: 32;
 }
 
-[data-theme="modern"] {
+[data-theme="surfaces-overlay-blue"] {
+  --tw-neutral-based-0: #ffffff;
+  --tw-neutral-based-1: #7b848c0d;
+  --tw-neutral-based-2: #7b848c14;
+  --tw-neutral-based-3: #7b848c1f;
+  --tw-neutral-based-4: #7b848c26;
+  --tw-neutral-based-5: #7b848c2e;
+  --tw-primary-based-0: #ffffff;
+  --tw-primary-based-1: #4f68f90d;
+  --tw-primary-based-2: #4f68f914;
+  --tw-primary-based-3: #4f68f91c;
+  --tw-primary-based-4: #4f68f91f;
+  --tw-primary-based-5: #4f68f924;
+  --tw-secondary-based-0: #ffffff;
+  --tw-secondary-based-1: #1d91590d;
+  --tw-secondary-based-2: #1d915914;
+  --tw-secondary-based-3: #1d91591c;
+  --tw-secondary-based-4: #1d91591f;
+  --tw-secondary-based-5: #1d915924;
+}
+
+[data-theme="text-colors-mode-1"] {
+  --tw-on-surface-hight-emphasis: #1a1a1af5;
+  --tw-on-surface-medium-emphasis: #1a1a1ac2;
+  --tw-on-surface-disabled: #1a1a1a9e;
+  --tw-on-primary-dark-hight-emphasis: #ffffff;
+  --tw-on-primary-dark-medium-emphasis: #ffffffcc;
+  --tw-on-primary-dark-disabled: #ffffff99;
+  --tw-hyperlink-hyperlink: #276ee5;
+}
+
+[data-theme="typography-mode-1"] {
+  --tw-hero-font-family: Josefin Sans;
+  --tw-hero-size-lg: 72;
+  --tw-hero-size-md: 64;
+  --tw-hero-size-sm: 48;
+  --tw-hero-size-xs: 40;
+  --tw-hero-font-weight: 700;
+  --tw-hero-subtitle-font-family: Source Sans 3;
+  --tw-hero-subtitle-size-lg: 40;
+  --tw-hero-subtitle-size-md: 32;
+  --tw-hero-subtitle-size-sm: 24;
+  --tw-hero-subtitle-font-regular: 400;
+  --tw-hero-subtitle-font-strong: 700;
+  --tw-page-title-font-family: Josefin Sans;
+  --tw-page-title-size-lg: 64;
+  --tw-page-title-size-md: 48;
+  --tw-page-title-size-sm: 32;
+  --tw-page-title-font-weight: 700;
+  --tw-page-subtitle-font-family: Source Sans 3;
+  --tw-page-subtitle-size-lg: 40;
+  --tw-page-subtitle-size-md: 32;
+  --tw-page-subtitle-size-sm: 24;
+  --tw-page-subtitle-font-weight: 400;
+  --tw-section-title-font-family: Josefin Sans;
+  --tw-section-title-size-lg: 32;
+  --tw-section-title-size-md: 24;
+  --tw-section-title-size-sm: 20;
+  --tw-section-title-font-weight: 600;
+  --tw-section-subtitle-font-family: Source Sans 3;
+  --tw-section-subtitle-size-lg: 24;
+  --tw-section-subtitle-size-md: 20;
+  --tw-section-subtitle-size-sm: 16;
+  --tw-section-subtitle-font-weight: 400;
+  --tw-component-title-font-family: Source Sans 3;
+  --tw-component-title-size-lg: 32;
+  --tw-component-title-size-md: 24;
+  --tw-component-title-size-sm: 20;
+  --tw-component-title-font-weight: 600;
+  --tw-component-subtitle-font-family: Source Sans 3;
+  --tw-component-subtitle-size-lg: 24;
+  --tw-component-subtitle-size-md: 20;
+  --tw-component-subtitle-size-sm: 16;
+  --tw-component-subtitle-font-weight: 400;
+  --tw-body-font-family: Source Sans 3;
+  --tw-body-size-lg: 20;
+  --tw-body-size-md: 16;
+  --tw-body-size-sm: 14;
+  --tw-body-font-regular: 400;
+  --tw-body-font-strong: 600;
+  --tw-body-italic: Medium Italic;
+  --tw-button-font-family: Source Sans 3;
+  --tw-button-size-lg: 18;
+  --tw-button-size-md: 16;
+  --tw-button-size-sm: 14;
+  --tw-button-font-strong: 600;
+  --tw-caption-font-family: Source Sans 3;
+  --tw-caption-size-lg: 14;
+  --tw-caption-size-md: 12;
+  --tw-caption-size-sm: 10;
+  --tw-caption-font-regular: 400;
+  --tw-caption-font-strong: 600;
+}
+
+[data-theme="typography-primitives-modern"] {
   --tw-font-family-family-title: Josefin Sans;
   --tw-font-family-family-body: Source Sans 3;
   --tw-font-family-family-button: Source Sans 3;
@@ -413,4 +425,4 @@
   --tw-style-black-italic: Black Italic;
 }
 
-/* Generated: 2025-06-16T10:49:28.392Z */
+/* Generated: 2025-06-16T10:57:15.540Z */
