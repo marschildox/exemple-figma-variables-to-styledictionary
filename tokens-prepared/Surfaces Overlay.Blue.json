@@ -1,0 +1,290 @@
+{
+  "Neutral Based": {
+    "0": {
+      "type": "color",
+      "value": "{White.FFF}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Neutral Based-0"
+    },
+    "1": {
+      "type": "color",
+      "value": "{Neutral.Neutral-5%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Neutral Based-1"
+    },
+    "2": {
+      "type": "color",
+      "value": "{Neutral.Neutral-8%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Neutral Based-2"
+    },
+    "3": {
+      "type": "color",
+      "value": "{Neutral.Neutral-12%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Neutral Based-3"
+    },
+    "4": {
+      "type": "color",
+      "value": "{Neutral.Neutral-15%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Neutral Based-4"
+    },
+    "5": {
+      "type": "color",
+      "value": "{Neutral.Neutral-18%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Neutral Based-5"
+    }
+  },
+  "Primary Based": {
+    "0": {
+      "type": "color",
+      "value": "{White.FFF}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Primary Based-0"
+    },
+    "1": {
+      "type": "color",
+      "value": "{Primary.Primary-5%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Primary Based-1"
+    },
+    "2": {
+      "type": "color",
+      "value": "{Primary.Primary-8%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Primary Based-2"
+    },
+    "3": {
+      "type": "color",
+      "value": "{Primary.Primary-11%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Primary Based-3"
+    },
+    "4": {
+      "type": "color",
+      "value": "{Primary.Primary-12%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Primary Based-4"
+    },
+    "5": {
+      "type": "color",
+      "value": "{Primary.Primary-14%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Primary Based-5"
+    }
+  },
+  "Secondary Based": {
+    "0": {
+      "type": "color",
+      "value": "{Basic.White}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Secondary Based-0"
+    },
+    "1": {
+      "type": "color",
+      "value": "{Secondary.Secondary-5%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Secondary Based-1"
+    },
+    "2": {
+      "type": "color",
+      "value": "{Secondary.Secondary-8%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Secondary Based-2"
+    },
+    "3": {
+      "type": "color",
+      "value": "{Secondary.Secondary-11%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Secondary Based-3"
+    },
+    "4": {
+      "type": "color",
+      "value": "{Secondary.Secondary-12%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Secondary Based-4"
+    },
+    "5": {
+      "type": "color",
+      "value": "{Secondary.Secondary-14%}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Secondary Based-5"
+    }
+  }
+}

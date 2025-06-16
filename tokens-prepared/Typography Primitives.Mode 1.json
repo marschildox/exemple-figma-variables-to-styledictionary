@@ -1,0 +1,426 @@
+{
+  "Font Family": {
+    "Family Title": {
+      "type": "string",
+      "value": "Inter",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Font Family-Family Title"
+    },
+    "Family Body": {
+      "type": "string",
+      "value": "Roboto",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Font Family-Family Body"
+    },
+    "Family Button": {
+      "type": "string",
+      "value": "Roboto",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Font Family-Family Button"
+    }
+  },
+  "Size": {
+    "Size-10": {
+      "type": "number",
+      "value": 10,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Size-Size-10"
+    },
+    "Size-12": {
+      "type": "number",
+      "value": 12,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Size-Size-12"
+    },
+    "Size-14": {
+      "type": "number",
+      "value": 14,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Size-Size-14"
+    },
+    "Size-16": {
+      "type": "number",
+      "value": 16,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Size-Size-16"
+    },
+    "Size-18": {
+      "type": "number",
+      "value": 18,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Size-Size-18"
+    },
+    "Size-20": {
+      "type": "number",
+      "value": 20,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Size-Size-20"
+    },
+    "Size-24": {
+      "type": "number",
+      "value": 24,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Size-Size-24"
+    },
+    "Size-32": {
+      "type": "number",
+      "value": 32,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Size-Size-32"
+    },
+    "Size-40": {
+      "type": "number",
+      "value": 40,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Size-Size-40"
+    },
+    "Size-48": {
+      "type": "number",
+      "value": 48,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Size-Size-48"
+    },
+    "Size-64": {
+      "type": "number",
+      "value": 64,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Size-Size-64"
+    },
+    "Size-72": {
+      "type": "number",
+      "value": 72,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Size-Size-72"
+    }
+  },
+  "Weight": {
+    "Weight-100-thin": {
+      "type": "number",
+      "value": 100,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Weight-Weight-100-thin"
+    },
+    "Weight-200-extralight": {
+      "type": "number",
+      "value": 200,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Weight-Weight-200-extralight"
+    },
+    "Weight-300-light": {
+      "type": "number",
+      "value": 300,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Weight-Weight-300-light"
+    },
+    "Weight-400-regular": {
+      "type": "number",
+      "value": 400,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Weight-Weight-400-regular"
+    },
+    "Weight-500-medium": {
+      "type": "number",
+      "value": 500,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Weight-Weight-500-medium"
+    },
+    "Weight-600-semibold": {
+      "type": "number",
+      "value": 600,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Weight-Weight-600-semibold"
+    },
+    "Weight-700-bold": {
+      "type": "number",
+      "value": 700,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Weight-Weight-700-bold"
+    },
+    "Weight-800-extrabold": {
+      "type": "number",
+      "value": 800,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Weight-Weight-800-extrabold"
+    },
+    "Weight-900-black": {
+      "type": "number",
+      "value": 900,
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Weight-Weight-900-black"
+    }
+  },
+  "Style": {
+    "Thin Italic": {
+      "type": "string",
+      "value": "Thin Italic",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Style-Thin Italic"
+    },
+    "Extra ligh Italic": {
+      "type": "string",
+      "value": "Extra ligh Italic",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Style-Extra ligh Italic"
+    },
+    "Light Italic": {
+      "type": "string",
+      "value": "Light Italic",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Style-Light Italic"
+    },
+    "Medium Italic": {
+      "type": "string",
+      "value": "Medium Italic",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Style-Medium Italic"
+    },
+    "Semi Bold Italic": {
+      "type": "string",
+      "value": "Semi Bold Italic",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Style-Semi Bold Italic"
+    },
+    "Bold Italic": {
+      "type": "string",
+      "value": "Bold Italic",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Style-Bold Italic"
+    },
+    "Extra Bold Italic": {
+      "type": "string",
+      "value": "Extra Bold Italic",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Style-Extra Bold Italic"
+    },
+    "Black Italic": {
+      "type": "string",
+      "value": "Black Italic",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      },
+      "name": "Style-Black Italic"
+    }
+  }
+}
