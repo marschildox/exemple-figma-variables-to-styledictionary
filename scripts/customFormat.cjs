@@ -1,18 +1,6 @@
 const StyleDictionary = require('style-dictionary');
-const fs = require('fs');
 const path = require('path');
 
-// Paso 1: Obtener lista de modos válidos desde archivos SEMANTIC COLORS
-const tokensDir = path.join(__dirname, '..', 'tokens');
-const semanticFiles = fs
-  .readdirSync(tokensDir)
-  .filter(f => f.startsWith('SEMANTIC COLORS.') && f.endsWith('.json'));
-
-const validModes = semanticFiles.map(file =>
-  file.replace('SEMANTIC COLORS.', '').replace('.json', '').toLowerCase().replace(/\s+/g, '-')
-);
-
-// Paso 2: Registrar formato personalizado
 StyleDictionary.registerFormat({
   name: 'custom/css-themes',
   formatter: function ({ dictionary }) {
@@ -20,13 +8,13 @@ StyleDictionary.registerFormat({
     const themes = {};
 
     dictionary.allProperties.forEach(prop => {
-      const filename = prop.filePath.split('/').pop();
-      const match = filename.match(/\.([^.]+)\.json$/);
+      const filename = prop.filePath.split('/').pop(); // ej: Color Primitives.Mode 1.json
+      const match = filename.match(/\.([^.]+)\.json$/); // extrae 'Mode 1', 'Modern', etc.
       const rawMode = match?.[1] || 'base';
-      const mode = rawMode.toLowerCase().replace(/\s+/g, '-');
+      const mode = rawMode.toLowerCase().replace(/\s+/g, '-'); // limpia espacios
       const varName = `--tw-${prop.name.replace(/\./g, '-')}`;
 
-      if (mode === 'base' || !validModes.includes(mode)) {
+      if (mode === 'base') {
         root += `  ${varName}: ${prop.value};\n`;
       } else {
         if (!themes[mode]) themes[mode] = '';
