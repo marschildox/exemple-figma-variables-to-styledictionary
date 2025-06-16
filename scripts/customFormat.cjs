@@ -31,7 +31,7 @@ StyleDictionary.registerFormat({
       const parts = cleanName.split('.');
       const mode = parts.pop().toLowerCase().replace(/\s+/g, '').replace(/\./g, '');
       const collection = parts.join('').toLowerCase().replace(/\s+/g, '');
-      const key = `${collection}|${mode}`;
+      const key = `${collection}${mode}`; // ✅ misma clave que en preprocess
       const varName = `--${prop.name}`;
 
       if (mode === 'base') {
@@ -48,7 +48,7 @@ StyleDictionary.registerFormat({
       .map(([collection, modes]) =>
         modes
           .map(mode => {
-            const key = `${collection}|${mode}`;
+            const key = `${collection}${mode}`; // ✅ clave unificada
             const content = blocks[key] || '';
             return `[data-theme="${collection}"][data-mode="${mode}"] {\n${content}}\n`;
           })
