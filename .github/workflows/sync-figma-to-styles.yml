@@ -1,4 +1,4 @@
-name: Sync Figma variables to tokens (and code)
+name: Figma variables > tokens + styles
 on:
   workflow_dispatch:
     inputs:
