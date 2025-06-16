@@ -2,7 +2,13 @@
 const StyleDictionary = require('style-dictionary');
 const path = require('path');
 
-// Formato: agrupa por [data-theme="collection"][data-mode="mode"]
+// Grupo de transformación sin nombre custom
+StyleDictionary.registerTransformGroup({
+  name: 'custom/css-plain',
+  transforms: ['attribute/cti', 'color/css']
+});
+
+// Formato CSS modular con data-theme y data-mode
 StyleDictionary.registerFormat({
   name: 'custom/css-theme-mode-attributes',
   formatter: function ({ dictionary }) {
@@ -16,7 +22,7 @@ StyleDictionary.registerFormat({
       const mode = match?.[2]?.toLowerCase().replace(/\s+/g, '').replace(/\./g, '') || 'base';
 
       const key = `${collection}|${mode}`;
-      const varName = `--tw-${collection}-${mode}-${prop.path.join('-').toLowerCase()}`;
+      const varName = `--${prop.name}`; // usamos name del preprocesador
 
       if (mode === 'base') {
         root += `  ${varName}: ${prop.value};\n`;
