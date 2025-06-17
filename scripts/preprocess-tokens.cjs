@@ -9,7 +9,6 @@ if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
 const metadata = {};
 
-// ✅ Normaliza cualquier nombre eliminando espacios, puntos, y bajando a minúsculas
 const normalize = str => str.toLowerCase().replace(/\s+/g, '').replace(/\./g, '');
 
 function processTokenObject(obj, prefix = [], result = {}, collection = '', mode = '') {
@@ -19,7 +18,7 @@ function processTokenObject(obj, prefix = [], result = {}, collection = '', mode
     if (value && typeof value === 'object' && 'value' in value) {
       result[pathArray.join('.')] = {
         ...value,
-        name: `${collection}${mode}-${pathArray.join('-')}`
+        name: `${collection}-${mode}-${pathArray.join('-')}`
       };
     } else if (typeof value === 'object') {
       processTokenObject(value, pathArray, result, collection, mode);
