@@ -18,7 +18,7 @@ function processTokenObject(obj, prefix = [], result = {}, collection = '', mode
     if (value && typeof value === 'object' && 'value' in value) {
       result[pathArray.join('.')] = {
         ...value,
-        name: `${collection}-${mode}-${pathArray.join('-')}`
+      name: `${normalizedFileName}-${pathArray.join('-')}`
       };
     } else if (typeof value === 'object') {
       processTokenObject(value, pathArray, result, collection, mode);
