@@ -26,7 +26,7 @@ StyleDictionary.registerFormat({
     dictionary.allProperties.forEach(prop => {
       // buscamos patrón: tw-[colección][modo]-resto...
       const name = prop.name.replace(/^tw-/, '');
-      const collectionMatch = name.match(/^([a-z0-9]+?)(mode\d+|modern|blue|standard|condensed|expanded|occidental|kawaii|asiaverdezul|musulmán|gubernamental|asiático|square|m|s|l|xlrounded)-/i);
+      const collectionMatch = name.match(/^([a-z0-9]+)(kawaii|mode\d+|modern|blue|standard|condensed|expanded|occidental|asiaverdezul|musulmán|gubernamental|asiático|square|m|s|l|xlrounded)-/i);
       if (!collectionMatch) return;
 
       const collection = collectionMatch[1].toLowerCase();
