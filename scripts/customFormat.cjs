@@ -29,7 +29,7 @@ StyleDictionary.registerFormat({
 
       for (const [collection, modes] of Object.entries(metadata)) {
         for (const mode of modes) {
-          const prefix = `tw-${collection}${mode}-`;
+          const prefix = `${collection}${mode}-`;
           if (name.startsWith(prefix)) {
             const key = `${collection}${mode}`;
             const varName = `--${prop.name}`;
