@@ -9,7 +9,8 @@
       "files": [
         {
           "destination": "variables.css",
-          "format": "custom/css-theme-mode-attributes"
+          "format": "custom/css-theme-mode-attributes",
+          "filter": "isDesignToken"
         }
       ]
     }
