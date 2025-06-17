@@ -24,11 +24,13 @@ StyleDictionary.registerFormat({
     const blocks = {};
 
     dictionary.allProperties.forEach(prop => {
-      const parts = prop.name.split('-');
-      if (parts.length < 3) return; // asegurar prefijo + colección + modo
+      // buscamos patrón: tw-[colección][modo]-resto...
+      const name = prop.name.replace(/^tw-/, '');
+      const collectionMatch = name.match(/^([a-z0-9]+?)(mode\d+|modern|blue|standard|condensed|expanded|occidental|kawaii|asiaverdezul|musulmán|gubernamental|asiático|square|m|s|l|xlrounded)-/i);
+      if (!collectionMatch) return;
 
-      const collection = parts[1];
-      const mode = parts[2];
+      const collection = collectionMatch[1].toLowerCase();
+      const mode = collectionMatch[2].toLowerCase();
       const key = `${collection}${mode}`;
       const varName = `--${prop.name}`;
 
