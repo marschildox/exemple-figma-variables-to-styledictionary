@@ -24,18 +24,23 @@ StyleDictionary.registerFormat({
     const blocks = {};
 
     dictionary.allProperties.forEach(prop => {
-      // buscamos patrón: tw-[colección][modo]-resto...
-      const name = prop.name.replace(/^tw-/, '');
-      const collectionMatch = name.match(/^([a-z0-9]+)(kawaii|mode\d+|modern|blue|standard|condensed|expanded|occidental|asiaverdezul|musulmán|gubernamental|asiático|square|m|s|l|xlrounded)-/i);
-      if (!collectionMatch) return;
+      const name = prop.name.toLowerCase();
+      let matched = false;
 
-      const collection = collectionMatch[1].toLowerCase();
-      const mode = collectionMatch[2].toLowerCase();
-      const key = `${collection}${mode}`;
-      const varName = `--${prop.name}`;
-
-      if (!blocks[key]) blocks[key] = '';
-      blocks[key] += `  ${varName}: ${prop.value};\n`;
+      for (const [collection, modes] of Object.entries(metadata)) {
+        for (const mode of modes) {
+          const prefix = `tw-${collection}${mode}-`;
+          if (name.startsWith(prefix)) {
+            const key = `${collection}${mode}`;
+            const varName = `--${prop.name}`;
+            if (!blocks[key]) blocks[key] = '';
+            blocks[key] += `  ${varName}: ${prop.value};\n`;
+            matched = true;
+            break;
+          }
+        }
+        if (matched) break;
+      }
     });
 
     root += '}\n\n';
