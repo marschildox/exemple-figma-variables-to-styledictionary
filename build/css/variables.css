@@ -14,14 +14,205 @@
 }
 
 [data-theme="borderradius"][data-mode="xl-rounded"] {
+  --borderradiusxl-rounded-General-Border_radius: 32;
+  --borderradiusxl-rounded-Cards-Border_radius: 32;
+  --borderradiusxl-rounded-Internal image-Border_radius: 24;
 }
 
 
 [data-theme="borderradiusprimitives"][data-mode="mode1"] {
+  --borderradiusprimitivesmode1-radius_0px: 0;
+  --borderradiusprimitivesmode1-radius_2px: 2;
+  --borderradiusprimitivesmode1-radius_4px: 4;
+  --borderradiusprimitivesmode1-radius_8px: 8;
+  --borderradiusprimitivesmode1-radius_16px: 16;
+  --borderradiusprimitivesmode1-radius_24px: 24;
+  --borderradiusprimitivesmode1-radius_32px: 32;
 }
 
 
 [data-theme="colorprimitives"][data-mode="mode1"] {
+  --colorprimitivesmode1-Blue-50: #f0efff;
+  --colorprimitivesmode1-Blue-100: #dee0ff;
+  --colorprimitivesmode1-Blue-300: #97a5ff;
+  --colorprimitivesmode1-Blue-500: #4c66ff;
+  --colorprimitivesmode1-Blue-700: #092fc8;
+  --colorprimitivesmode1-Blue-900: #000f5d;
+  --colorprimitivesmode1-Blue-500-4%: #4f68f90a;
+  --colorprimitivesmode1-Blue-500-5%: #4f68f90d;
+  --colorprimitivesmode1-Blue-500-8%: #4f68f914;
+  --colorprimitivesmode1-Blue-500-10%: #4f68f91a;
+  --colorprimitivesmode1-Blue-500-11%: #4f68f91c;
+  --colorprimitivesmode1-Blue-500-12%: #4f68f91f;
+  --colorprimitivesmode1-Blue-500-14%: #4f68f924;
+  --colorprimitivesmode1-Baby blue-50: #e5f1f2;
+  --colorprimitivesmode1-Baby blue-100: #d3e7e9;
+  --colorprimitivesmode1-Baby blue-300: #c1dde0;
+  --colorprimitivesmode1-Baby blue-500: #a7cfd3;
+  --colorprimitivesmode1-Baby blue-700: #759194;
+  --colorprimitivesmode1-Baby blue-900: #435354;
+  --colorprimitivesmode1-Baby blue-500-4%: #a7cfd30a;
+  --colorprimitivesmode1-Baby blue-500-5%: #a7cfd30d;
+  --colorprimitivesmode1-Baby blue-500-8%: #a7cfd314;
+  --colorprimitivesmode1-Baby blue-500-10%: #a7cfd31a;
+  --colorprimitivesmode1-Baby blue-500-11%: #a7cfd31c;
+  --colorprimitivesmode1-Baby blue-500-12%: #a7cfd31f;
+  --colorprimitivesmode1-Baby blue-500-14%: #a7cfd324;
+  --colorprimitivesmode1-Bright Blue-Bright Blue: #276ee5;
+  --colorprimitivesmode1-Deep blue-50: #7b9dce;
+  --colorprimitivesmode1-Deep blue-100: #5e88c3;
+  --colorprimitivesmode1-Deep blue-300: #507dbe;
+  --colorprimitivesmode1-Deep blue-500: #39619a;
+  --colorprimitivesmode1-Deep blue-700: #243d61;
+  --colorprimitivesmode1-Deep blue-900: #192b44;
+  --colorprimitivesmode1-Deep blue-500-4%: #39619a0a;
+  --colorprimitivesmode1-Deep blue-500-5%: #39619a0d;
+  --colorprimitivesmode1-Deep blue-500-8%: #39619a14;
+  --colorprimitivesmode1-Deep blue-500-10%: #39619a1a;
+  --colorprimitivesmode1-Deep blue-500-11%: #39619a1c;
+  --colorprimitivesmode1-Deep blue-500-12%: #39619a1f;
+  --colorprimitivesmode1-Deep blue-500-14%: #39619a24;
+  --colorprimitivesmode1-Red-50: #ffebeb;
+  --colorprimitivesmode1-Red-100: #fc9595;
+  --colorprimitivesmode1-Red-300: #d83232;
+  --colorprimitivesmode1-Red-500: #b01212;
+  --colorprimitivesmode1-Red-700: #8c0000;
+  --colorprimitivesmode1-Red-900: #660000;
+  --colorprimitivesmode1-Red-500-4%: #b012120a;
+  --colorprimitivesmode1-Red-500-8%: #b0121214;
+  --colorprimitivesmode1-Red-500-10%: #b012121a;
+  --colorprimitivesmode1-Red-500-12%: #b012121f;
+  --colorprimitivesmode1-Deep Red-50: #fbdddd;
+  --colorprimitivesmode1-Deep Red-100: #f6a7a8;
+  --colorprimitivesmode1-Deep Red-300: #f3696b;
+  --colorprimitivesmode1-Deep Red-500: #d82a30;
+  --colorprimitivesmode1-Deep Red-700: #991b1f;
+  --colorprimitivesmode1-Deep Red-900: #5f0d0f;
+  --colorprimitivesmode1-Deep Red-500-4%: #d82a300a;
+  --colorprimitivesmode1-Deep Red-500-5%: #d82a300d;
+  --colorprimitivesmode1-Deep Red-500-8%: #d82a3014;
+  --colorprimitivesmode1-Deep Red-500-10%: #d82a301a;
+  --colorprimitivesmode1-Deep Red-500-11%: #d82a301c;
+  --colorprimitivesmode1-Deep Red-500-12%: #d82a301f;
+  --colorprimitivesmode1-Deep Red-500-14%: #d82a3024;
+  --colorprimitivesmode1-Green-50: #e8fcf1;
+  --colorprimitivesmode1-Green-100: #b1eaca;
+  --colorprimitivesmode1-Green-300: #419e6a;
+  --colorprimitivesmode1-Green-500: #00632b;
+  --colorprimitivesmode1-Green-700: #00401c;
+  --colorprimitivesmode1-Green-900: #002c14;
+  --colorprimitivesmode1-Deep Green-50: #c3fed9;
+  --colorprimitivesmode1-Deep Green-100: #34e791;
+  --colorprimitivesmode1-Deep Green-300: #28bb74;
+  --colorprimitivesmode1-Deep Green-500: #1a8753;
+  --colorprimitivesmode1-Deep Green-700: #12693f;
+  --colorprimitivesmode1-Deep Green-900: #084427;
+  --colorprimitivesmode1-Deep Green-500-4%: #1d91590a;
+  --colorprimitivesmode1-Deep Green-500-5%: #1d91590d;
+  --colorprimitivesmode1-Deep Green-500-8%: #1d915914;
+  --colorprimitivesmode1-Deep Green-500-10%: #1d91591a;
+  --colorprimitivesmode1-Deep Green-500-11%: #1d91591c;
+  --colorprimitivesmode1-Deep Green-500-12%: #1d91591f;
+  --colorprimitivesmode1-Deep Green-500-14%: #1d915924;
+  --colorprimitivesmode1-Salmon-50: #fdd0d3;
+  --colorprimitivesmode1-Salmon-100: #fa97a1;
+  --colorprimitivesmode1-Salmon-300: #f94f68;
+  --colorprimitivesmode1-Salmon-500: #ce1a40;
+  --colorprimitivesmode1-Salmon-700: #8f0e2a;
+  --colorprimitivesmode1-Salmon-900: #550515;
+  --colorprimitivesmode1-Salmon-500-4%: #ce1a400a;
+  --colorprimitivesmode1-Salmon-500-5%: #ce1a400d;
+  --colorprimitivesmode1-Salmon-500-8%: #ce1a4014;
+  --colorprimitivesmode1-Salmon-500-10%: #ce1a401a;
+  --colorprimitivesmode1-Salmon-500-11%: #ce1a401c;
+  --colorprimitivesmode1-Salmon-500-12%: #ce1a401f;
+  --colorprimitivesmode1-Salmon-500-14%: #ce1a4024;
+  --colorprimitivesmode1-Pink-50: #f6b6d0;
+  --colorprimitivesmode1-Pink-100: #f085b0;
+  --colorprimitivesmode1-Pink-300: #ea5490;
+  --colorprimitivesmode1-Pink-500: #e10b61;
+  --colorprimitivesmode1-Pink-700: #9d0867;
+  --colorprimitivesmode1-Pink-900: #5a043b;
+  --colorprimitivesmode1-Pink-500-4%: #e10b610a;
+  --colorprimitivesmode1-Pink-500-5%: #e10b610d;
+  --colorprimitivesmode1-Pink-500-8%: #e10b6114;
+  --colorprimitivesmode1-Pink-500-10%: #e10b611a;
+  --colorprimitivesmode1-Pink-500-11%: #e10b611c;
+  --colorprimitivesmode1-Pink-500-12%: #e10b611f;
+  --colorprimitivesmode1-Pink-500-14%: #e10b6124;
+  --colorprimitivesmode1-Bright Pink-500: #ef08ae;
+  --colorprimitivesmode1-Yellow-50: #fbf3d0;
+  --colorprimitivesmode1-Yellow-100: #f7e7a1;
+  --colorprimitivesmode1-Yellow-300: #f4db71;
+  --colorprimitivesmode1-Yellow-500: #f0d042;
+  --colorprimitivesmode1-Yellow-700: #d4b011;
+  --colorprimitivesmode1-Yellow-900: #8e750b;
+  --colorprimitivesmode1-Yellow-500-4%: #f0d0420a;
+  --colorprimitivesmode1-Yellow-500-5%: #f0d0420d;
+  --colorprimitivesmode1-Yellow-500-8%: #f0d04214;
+  --colorprimitivesmode1-Yellow-500-10%: #f0d0421a;
+  --colorprimitivesmode1-Yellow-500-11%: #f0d0421c;
+  --colorprimitivesmode1-Yellow-500-12%: #f0d0421f;
+  --colorprimitivesmode1-Yellow-500-14%: #f0d04224;
+  --colorprimitivesmode1-Orange-50: #fff7db;
+  --colorprimitivesmode1-Orange-100: #ffdf83;
+  --colorprimitivesmode1-Orange-300: #efb008;
+  --colorprimitivesmode1-Orange-500: #976400;
+  --colorprimitivesmode1-Orange-700: #724b00;
+  --colorprimitivesmode1-Orange-900: #4c2900;
+  --colorprimitivesmode1-Grey-50: #f3f5f6;
+  --colorprimitivesmode1-Grey-100: #e5e8eb;
+  --colorprimitivesmode1-Grey-300: #afb7bc;
+  --colorprimitivesmode1-Grey-500: #7b848c;
+  --colorprimitivesmode1-Grey-700: #50585f;
+  --colorprimitivesmode1-Grey-900: #212121;
+  --colorprimitivesmode1-Grey-500-5%: #7b848c0d;
+  --colorprimitivesmode1-Grey-500-8%: #7b848c14;
+  --colorprimitivesmode1-Grey-500-12%: #7b848c1f;
+  --colorprimitivesmode1-Grey-500-15%: #7b848c26;
+  --colorprimitivesmode1-Grey-500-18%: #7b848c2e;
+  --colorprimitivesmode1-Dark Grey-Dark grey: #232f34;
+  --colorprimitivesmode1-White-FFF: #ffffff;
+  --colorprimitivesmode1-White-FFFFFF-4%: #ffffff0a;
+  --colorprimitivesmode1-White-FFFFFF-8%: #ffffff14;
+  --colorprimitivesmode1-White-FFFFFF-10%: #ffffff1a;
+  --colorprimitivesmode1-White-FFFFFF-12%: #ffffff1f;
+  --colorprimitivesmode1-White-FFFFFF-38%: #ffffff99;
+  --colorprimitivesmode1-White-FFFFFF-74%: #ffffffcc;
+  --colorprimitivesmode1-Black-000: #1a1a1a;
+  --colorprimitivesmode1-Black-000000-4%: #1a1a1a0a;
+  --colorprimitivesmode1-Black-000000-8%: #1a1a1a14;
+  --colorprimitivesmode1-Black-000000-10%: #1a1a1a1a;
+  --colorprimitivesmode1-Black-000000-12%: #1a1a1a1f;
+  --colorprimitivesmode1-Black-000000-62%: #1a1a1a9e;
+  --colorprimitivesmode1-Black-000000-76%: #1a1a1ac2;
+  --colorprimitivesmode1-Black-000000-96%: #1a1a1af5;
+  --colorprimitivesmode1-Purple-50: #e3c1e8;
+  --colorprimitivesmode1-Purple-100: #cf98d8;
+  --colorprimitivesmode1-Purple-300: #bd70c8;
+  --colorprimitivesmode1-Purple-500: #a032b1;
+  --colorprimitivesmode1-Purple-700: #70237c;
+  --colorprimitivesmode1-Purple-900: #401447;
+  --colorprimitivesmode1-Purple-500-4%: #a032b10a;
+  --colorprimitivesmode1-Purple-500-5%: #a032b10d;
+  --colorprimitivesmode1-Purple-500-8%: #a032b114;
+  --colorprimitivesmode1-Purple-500-10%: #a032b11a;
+  --colorprimitivesmode1-Purple-500-11%: #a032b11c;
+  --colorprimitivesmode1-Purple-500-12%: #a032b11f;
+  --colorprimitivesmode1-Purple-500-14%: #a032b124;
+  --colorprimitivesmode1-Verdezul-50: #e2fbe5;
+  --colorprimitivesmode1-Verdezul-100: #c7f9cc;
+  --colorprimitivesmode1-Verdezul-300: #80ed99;
+  --colorprimitivesmode1-Verdezul-500: #57cc99;
+  --colorprimitivesmode1-Verdezul-700: #38a3a5;
+  --colorprimitivesmode1-Verdezul-900: #22577a;
+  --colorprimitivesmode1-Verdezul-500 - 4: #57cc990a;
+  --colorprimitivesmode1-Verdezul-500 - 5: #57cc990d;
+  --colorprimitivesmode1-Verdezul-500 - 8: #57cc9914;
+  --colorprimitivesmode1-Verdezul-500 - 10: #57cc991a;
+  --colorprimitivesmode1-Verdezul-500 - 11: #57cc991c;
+  --colorprimitivesmode1-Verdezul-500 - 12: #57cc991f;
+  --colorprimitivesmode1-Verdezul-500 - 14: #57cc9924;
 }
 
 
@@ -44,10 +235,91 @@
 }
 
 [data-theme="semanticcolors"][data-mode="occidental"] {
+  --semanticcolorsoccidental-Primary-50: #f0efff;
+  --semanticcolorsoccidental-Primary-100: #dee0ff;
+  --semanticcolorsoccidental-Primary-300: #97a5ff;
+  --semanticcolorsoccidental-Primary-500: #4c66ff;
+  --semanticcolorsoccidental-Primary-700: #092fc8;
+  --semanticcolorsoccidental-Primary-900: #000f5d;
+  --semanticcolorsoccidental-Primary-Primary-4%: #4f68f90a;
+  --semanticcolorsoccidental-Primary-Primary-5%: #4f68f90d;
+  --semanticcolorsoccidental-Primary-Primary-8%: #4f68f914;
+  --semanticcolorsoccidental-Primary-Primary-10%: #4f68f91a;
+  --semanticcolorsoccidental-Primary-Primary-11%: #4f68f91c;
+  --semanticcolorsoccidental-Primary-Primary-12%: #4f68f91f;
+  --semanticcolorsoccidental-Primary-Primary-14%: #4f68f924;
+  --semanticcolorsoccidental-Neutral-50: #f3f5f6;
+  --semanticcolorsoccidental-Neutral-100: #e5e8eb;
+  --semanticcolorsoccidental-Neutral-300: #afb7bc;
+  --semanticcolorsoccidental-Neutral-500: #7b848c;
+  --semanticcolorsoccidental-Neutral-700: #50585f;
+  --semanticcolorsoccidental-Neutral-900: #212121;
+  --semanticcolorsoccidental-Neutral-Neutral-5%: #7b848c0d;
+  --semanticcolorsoccidental-Neutral-Neutral-8%: #7b848c14;
+  --semanticcolorsoccidental-Neutral-Neutral-12%: #7b848c1f;
+  --semanticcolorsoccidental-Neutral-Neutral-15%: #7b848c26;
+  --semanticcolorsoccidental-Neutral-Neutral-18%: #7b848c2e;
+  --semanticcolorsoccidental-Secondary-Secondary 900: #084427;
+  --semanticcolorsoccidental-Secondary-Secondary 700: #12693f;
+  --semanticcolorsoccidental-Secondary-Secondary 500: #1a8753;
+  --semanticcolorsoccidental-Secondary-Secondary 300: #28bb74;
+  --semanticcolorsoccidental-Secondary-Secondary 100: #34e791;
+  --semanticcolorsoccidental-Secondary-Secondary 50: #c3fed9;
+  --semanticcolorsoccidental-Secondary-Secondary-4%: #1d91590a;
+  --semanticcolorsoccidental-Secondary-Secondary-5%: #1d91590d;
+  --semanticcolorsoccidental-Secondary-Secondary-8%: #1d915914;
+  --semanticcolorsoccidental-Secondary-Secondary-10%: #1d91591a;
+  --semanticcolorsoccidental-Secondary-Secondary-11%: #1d91591c;
+  --semanticcolorsoccidental-Secondary-Secondary-12%: #1d91591f;
+  --semanticcolorsoccidental-Secondary-Secondary-14%: #1d915924;
+  --semanticcolorsoccidental-Basic-White: #ffffff;
+  --semanticcolorsoccidental-Basic-Black: #1a1a1a;
+  --semanticcolorsoccidental-Basic-Tooltip: #232f34;
+  --semanticcolorsoccidental-Basic-Focus visible: #ef08ae;
+  --semanticcolorsoccidental-Basic-Accent 1: #97a5ff;
+  --semanticcolorsoccidental-Basic-Accent 2: #4c66ff;
+  --semanticcolorsoccidental-Success-50: #e8fcf1;
+  --semanticcolorsoccidental-Success-100: #b1eaca;
+  --semanticcolorsoccidental-Success-300: #419e6a;
+  --semanticcolorsoccidental-Success-500: #00632b;
+  --semanticcolorsoccidental-Success-700: #00401c;
+  --semanticcolorsoccidental-Success-900: #002c14;
+  --semanticcolorsoccidental-Error-50: #ffebeb;
+  --semanticcolorsoccidental-Error-100: #fc9595;
+  --semanticcolorsoccidental-Error-300: #d83232;
+  --semanticcolorsoccidental-Error-500: #b01212;
+  --semanticcolorsoccidental-Error-700: #8c0000;
+  --semanticcolorsoccidental-Error-900: #660000;
+  --semanticcolorsoccidental-Warning-50: #fff7db;
+  --semanticcolorsoccidental-Warning-100: #ffdf83;
+  --semanticcolorsoccidental-Warning-300: #efb008;
+  --semanticcolorsoccidental-Warning-500: #976400;
+  --semanticcolorsoccidental-Warning-700: #724b00;
+  --semanticcolorsoccidental-Warning-900: #4c2900;
 }
 
 
 [data-theme="statesoverlay"][data-mode="blue"] {
+  --statesoverlayblue-White-Hover: #ffffff0a;
+  --statesoverlayblue-White-Focused: #ffffff1f;
+  --statesoverlayblue-White-Pressed: #ffffff1a;
+  --statesoverlayblue-White-Dragged: #ffffff14;
+  --statesoverlayblue-White-Selected: #ffffff14;
+  --statesoverlayblue-Black-Hover: #1a1a1a0a;
+  --statesoverlayblue-Black-Focused: #1a1a1a1f;
+  --statesoverlayblue-Black-Pressed: #1a1a1a1a;
+  --statesoverlayblue-Black-Dragged: #1a1a1a14;
+  --statesoverlayblue-Black-Selected: #1a1a1a14;
+  --statesoverlayblue-Primary-Hover: #4f68f90a;
+  --statesoverlayblue-Primary-Focused: #4f68f91f;
+  --statesoverlayblue-Primary-Pressed: #4f68f91a;
+  --statesoverlayblue-Primary-Dragged: #4f68f914;
+  --statesoverlayblue-Primary-Selected: #4f68f914;
+  --statesoverlayblue-Error-Hover: #b012120a;
+  --statesoverlayblue-Error-Focused: #b012121f;
+  --statesoverlayblue-Error-Pressed: #b012121a;
+  --statesoverlayblue-Error-Dragged: #b0121214;
+  --statesoverlayblue-Error-Selected: #b0121214;
 }
 
 
@@ -58,18 +330,108 @@
 }
 
 [data-theme="spacing"][data-mode="standard"] {
+  --spacingstandard-spacing-xs: 8;
+  --spacingstandard-spacing-sm: 12;
+  --spacingstandard-spacing-md: 16;
+  --spacingstandard-spacing-lg: 24;
+  --spacingstandard-spacing-xl: 32;
 }
 
 
 [data-theme="surfacesoverlay"][data-mode="blue"] {
+  --surfacesoverlayblue-Neutral Based-0: #ffffff;
+  --surfacesoverlayblue-Neutral Based-1: #7b848c0d;
+  --surfacesoverlayblue-Neutral Based-2: #7b848c14;
+  --surfacesoverlayblue-Neutral Based-3: #7b848c1f;
+  --surfacesoverlayblue-Neutral Based-4: #7b848c26;
+  --surfacesoverlayblue-Neutral Based-5: #7b848c2e;
+  --surfacesoverlayblue-Primary Based-0: #ffffff;
+  --surfacesoverlayblue-Primary Based-1: #4f68f90d;
+  --surfacesoverlayblue-Primary Based-2: #4f68f914;
+  --surfacesoverlayblue-Primary Based-3: #4f68f91c;
+  --surfacesoverlayblue-Primary Based-4: #4f68f91f;
+  --surfacesoverlayblue-Primary Based-5: #4f68f924;
+  --surfacesoverlayblue-Secondary Based-0: #ffffff;
+  --surfacesoverlayblue-Secondary Based-1: #1d91590d;
+  --surfacesoverlayblue-Secondary Based-2: #1d915914;
+  --surfacesoverlayblue-Secondary Based-3: #1d91591c;
+  --surfacesoverlayblue-Secondary Based-4: #1d91591f;
+  --surfacesoverlayblue-Secondary Based-5: #1d915924;
 }
 
 
 [data-theme="textcolors"][data-mode="mode1"] {
+  --textcolorsmode1-On Surface-Hight Emphasis: #1a1a1af5;
+  --textcolorsmode1-On Surface-Medium Emphasis: #1a1a1ac2;
+  --textcolorsmode1-On Surface-Disabled: #1a1a1a9e;
+  --textcolorsmode1-On Primary - dark-Hight Emphasis: #ffffff;
+  --textcolorsmode1-On Primary - dark-Medium Emphasis: #ffffffcc;
+  --textcolorsmode1-On Primary - dark-Disabled: #ffffff99;
+  --textcolorsmode1-Hyperlink-Hyperlink: #276ee5;
 }
 
 
 [data-theme="typography"][data-mode="mode1"] {
+  --typographymode1-Hero-Font Family: Josefin Sans;
+  --typographymode1-Hero-size-lg: 72;
+  --typographymode1-Hero-size-md: 64;
+  --typographymode1-Hero-size-sm: 48;
+  --typographymode1-Hero-size-xs: 40;
+  --typographymode1-Hero-Font weight: 700;
+  --typographymode1-Hero Subtitle-Font Family: Source Sans 3;
+  --typographymode1-Hero Subtitle-size-lg: 40;
+  --typographymode1-Hero Subtitle-size-md: 32;
+  --typographymode1-Hero Subtitle-size-sm: 24;
+  --typographymode1-Hero Subtitle-Font regular: 400;
+  --typographymode1-Hero Subtitle-Font strong: 700;
+  --typographymode1-Page Title-Font Family: Josefin Sans;
+  --typographymode1-Page Title-size-lg: 64;
+  --typographymode1-Page Title-size-md: 48;
+  --typographymode1-Page Title-size-sm: 32;
+  --typographymode1-Page Title-Font weight: 700;
+  --typographymode1-Page Subtitle-Font Family: Source Sans 3;
+  --typographymode1-Page Subtitle-size-lg: 40;
+  --typographymode1-Page Subtitle-size-md: 32;
+  --typographymode1-Page Subtitle-Size-sm: 24;
+  --typographymode1-Page Subtitle-Font weight: 400;
+  --typographymode1-Section Title-Font Family: Josefin Sans;
+  --typographymode1-Section Title-size-lg: 32;
+  --typographymode1-Section Title-size-md: 24;
+  --typographymode1-Section Title-Size-sm: 20;
+  --typographymode1-Section Title-Font weight: 600;
+  --typographymode1-Section Subtitle-Font Family: Source Sans 3;
+  --typographymode1-Section Subtitle-size-lg: 24;
+  --typographymode1-Section Subtitle-size-md: 20;
+  --typographymode1-Section Subtitle-Size-sm: 16;
+  --typographymode1-Section Subtitle-Font weight: 400;
+  --typographymode1-Component Title-Font Family: Source Sans 3;
+  --typographymode1-Component Title-size-lg: 32;
+  --typographymode1-Component Title-size-md: 24;
+  --typographymode1-Component Title-Size-sm: 20;
+  --typographymode1-Component Title-Font weight: 600;
+  --typographymode1-Component Subtitle-Font Family: Source Sans 3;
+  --typographymode1-Component Subtitle-size-lg: 24;
+  --typographymode1-Component Subtitle-size-md: 20;
+  --typographymode1-Component Subtitle-Size-sm: 16;
+  --typographymode1-Component Subtitle-Font weight: 400;
+  --typographymode1-Body-Font Family: Source Sans 3;
+  --typographymode1-Body-size-lg: 20;
+  --typographymode1-Body-size-md: 16;
+  --typographymode1-Body-Size-sm: 14;
+  --typographymode1-Body-Font regular: 400;
+  --typographymode1-Body-Font strong: 600;
+  --typographymode1-Body-Italic: Medium Italic;
+  --typographymode1-Button-Font Family: Source Sans 3;
+  --typographymode1-Button-size-lg: 18;
+  --typographymode1-Button-size-md: 16;
+  --typographymode1-Button-size-sm: 14;
+  --typographymode1-Button-Font strong: 600;
+  --typographymode1-Caption-Font Family: Source Sans 3;
+  --typographymode1-Caption-size-lg: 14;
+  --typographymode1-Caption-size-md: 12;
+  --typographymode1-Caption-size-sm: 10;
+  --typographymode1-Caption-Font regular: 400;
+  --typographymode1-Caption-Font strong: 600;
 }
 
 
@@ -77,5 +439,37 @@
 }
 
 [data-theme="typographyprimitives"][data-mode="modern"] {
+  --typographyprimitivesmodern-Font Family-Family Title: Josefin Sans;
+  --typographyprimitivesmodern-Font Family-Family Body: Source Sans 3;
+  --typographyprimitivesmodern-Font Family-Family Button: Source Sans 3;
+  --typographyprimitivesmodern-Size-Size-10: 10;
+  --typographyprimitivesmodern-Size-Size-12: 12;
+  --typographyprimitivesmodern-Size-Size-14: 14;
+  --typographyprimitivesmodern-Size-Size-16: 16;
+  --typographyprimitivesmodern-Size-Size-18: 18;
+  --typographyprimitivesmodern-Size-Size-20: 20;
+  --typographyprimitivesmodern-Size-Size-24: 24;
+  --typographyprimitivesmodern-Size-Size-32: 32;
+  --typographyprimitivesmodern-Size-Size-40: 40;
+  --typographyprimitivesmodern-Size-Size-48: 48;
+  --typographyprimitivesmodern-Size-Size-64: 64;
+  --typographyprimitivesmodern-Size-Size-72: 72;
+  --typographyprimitivesmodern-Weight-Weight-100-thin: 100;
+  --typographyprimitivesmodern-Weight-Weight-200-extralight: 200;
+  --typographyprimitivesmodern-Weight-Weight-300-light: 300;
+  --typographyprimitivesmodern-Weight-Weight-400-regular: 400;
+  --typographyprimitivesmodern-Weight-Weight-500-medium: 500;
+  --typographyprimitivesmodern-Weight-Weight-600-semibold: 600;
+  --typographyprimitivesmodern-Weight-Weight-700-bold: 700;
+  --typographyprimitivesmodern-Weight-Weight-800-extrabold: 800;
+  --typographyprimitivesmodern-Weight-Weight-900-black: 900;
+  --typographyprimitivesmodern-Style-Thin Italic: Thin Italic;
+  --typographyprimitivesmodern-Style-Extra ligh Italic: Extra ligh Italic;
+  --typographyprimitivesmodern-Style-Light Italic: Light Italic;
+  --typographyprimitivesmodern-Style-Medium Italic: Medium Italic;
+  --typographyprimitivesmodern-Style-Semi Bold Italic: Semi Bold Italic;
+  --typographyprimitivesmodern-Style-Bold Italic: Bold Italic;
+  --typographyprimitivesmodern-Style-Extra Bold Italic: Extra Bold Italic;
+  --typographyprimitivesmodern-Style-Black Italic: Black Italic;
 }
-/* Generated: 2025-06-17T12:42:11.234Z */
+/* Generated: 2025-06-17T12:59:35.155Z */
