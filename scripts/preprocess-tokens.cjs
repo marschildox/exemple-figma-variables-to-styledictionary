@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 const path = require('path');
 
@@ -8,7 +9,9 @@ if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
 const metadata = {};
 
-// ⬇️ Corregido: recibe collection y mode como argumento
+// ✅ Normaliza cualquier nombre eliminando espacios, puntos, y bajando a minúsculas
+const normalize = str => str.toLowerCase().replace(/\s+/g, '').replace(/\./g, '');
+
 function processTokenObject(obj, prefix = [], result = {}, collection = '', mode = '') {
   for (const key in obj) {
     const value = obj[key];
@@ -33,8 +36,10 @@ fs.readdirSync(inputDir).forEach(file => {
 
   const baseName = file.replace('.json', '');
   const parts = baseName.split('.');
-  const mode = parts.pop().toLowerCase().replace(/\s+/g, '').replace(/\./g, '');
-  const collection = parts.join('').toLowerCase().replace(/\s+/g, '');
+  const rawMode = parts.pop();
+  const rawCollection = parts.join('.');
+  const mode = normalize(rawMode);
+  const collection = normalize(rawCollection);
 
   metadata[collection] = metadata[collection] || [];
   if (!metadata[collection].includes(mode)) {
