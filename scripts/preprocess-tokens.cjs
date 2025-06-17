@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 const path = require('path');
 
@@ -9,17 +8,18 @@ if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
 const metadata = {};
 
-function processTokenObject(obj, prefix = [], result = {}, fileKey = '') {
+// ⬇️ Corregido: recibe collection y mode como argumento
+function processTokenObject(obj, prefix = [], result = {}, collection = '', mode = '') {
   for (const key in obj) {
     const value = obj[key];
     const pathArray = [...prefix, key];
     if (value && typeof value === 'object' && 'value' in value) {
       result[pathArray.join('.')] = {
         ...value,
-        name: `${fileKey}-${pathArray.join('-')}`
+        name: `${collection}${mode}-${pathArray.join('-')}`
       };
     } else if (typeof value === 'object') {
-      processTokenObject(value, pathArray, result, fileKey);
+      processTokenObject(value, pathArray, result, collection, mode);
     }
   }
   return result;
@@ -41,8 +41,7 @@ fs.readdirSync(inputDir).forEach(file => {
     metadata[collection].push(mode);
   }
 
-  const fileKey = `${collection}${mode}`;
-  const flatTokens = processTokenObject(raw, [], {}, fileKey);
+  const flatTokens = processTokenObject(raw, [], {}, collection, mode);
 
   const nested = {};
   for (const key in flatTokens) {
