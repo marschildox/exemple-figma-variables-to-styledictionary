@@ -28,7 +28,7 @@ StyleDictionary.registerFormat({
       // buscamos colección y modo desde el prefijo del name
       for (const [collection, modes] of Object.entries(metadata)) {
         for (const mode of modes) {
-          const prefix = `${collection}${mode}-`;
+          const prefix = `${collection}-${mode}-`;
           if (name.startsWith(prefix)) {
             const key = `${collection}||${mode}`;
             const varName = `--${prop.name}`;
