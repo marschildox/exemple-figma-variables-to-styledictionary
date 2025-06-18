@@ -1,6 +1,6 @@
 {
   "source": [
-    "tokens-prepared/**/*.json"
+    "tokens-prepared/tokens-global.json"
   ],
   "platforms": {
     "css": {
