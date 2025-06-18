@@ -18,8 +18,6 @@ const normalize = str =>
     .replace(/[^a-z0-9\-]/g, '');
 
 // Helpers
-const transformTypography = require('./helpers/transformTypography.cjs');
-const addFontStyles = require('./helpers/add-font-styles.cjs');
 const transformOpacity = require('./helpers/transformOpacity.cjs');
 const transformLineHeight = require('./helpers/transformLineHeight.cjs');
 const transformFontWeight = require('./helpers/transformFontWeight.cjs');
@@ -35,23 +33,6 @@ function processTokenObject(obj, prefix = [], result = {}, normalizedFileName = 
     const pathArray = [...prefix, key];
 
     if (value && typeof value === 'object' && 'value' in value) {
-
-      // Si es typography → transformamos
-      if (value.type === 'typography') {
-        const typography = transformTypography(value.value);
-        const fontTokens = addFontStyles(`${normalizedFileName}-${pathArray.join('-')}`, typography);
-
-        for (const subKey in fontTokens) {
-          result[subKey] = {
-            ...value,
-            name: subKey,
-            value: fontTokens[subKey]
-          };
-        }
-
-        continue; // salto a siguiente token
-      }
-
       let finalValue = value.value;
 
       // Aplica transforms según tipo
@@ -73,15 +54,12 @@ function processTokenObject(obj, prefix = [], result = {}, normalizedFileName = 
         name: `${normalizedFileName}-${pathArray.join('-')}`,
         value: finalValue
       };
-
     } else if (typeof value === 'object') {
       processTokenObject(value, pathArray, result, normalizedFileName);
     }
   }
-
   return result;
 }
-
 
 // Procesamos cada archivo
 fs.readdirSync(inputDir).forEach(file => {
@@ -147,6 +125,17 @@ fs.readdirSync(inputDir).forEach(file => {
 // Escribimos metadata.json
 const metadataPath = path.join(outputDir, 'metadata.json');
 fs.writeFileSync(metadataPath, JSON.stringify(metadata, null, 2), 'utf-8');
+
 const globalOutPath = path.join(outputDir, 'tokens-global.json');
 fs.writeFileSync(globalOutPath, JSON.stringify(resolvedTokens, null, 2), 'utf-8');
 
+// Extra: genera un core-colors.json para Style Dictionary
+const coreColors = {};
+['White.FFF', 'White.FFFFFF', 'Black.000', 'Black.000000'].forEach(key => {
+  if (resolvedTokens[key]) {
+    // lo guardamos con key simple (sin punto), p.ej. "WhiteFFF"
+    coreColors[key.replace(/\./g, '')] = resolvedTokens[key];
+  }
+});
+const coreOutPath = path.join(outputDir, '_core-colors.json');
+fs.writeFileSync(coreOutPath, JSON.stringify(coreColors, null, 2), 'utf-8');
