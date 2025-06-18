@@ -18,10 +18,10 @@ const normalize = str =>
     .replace(/[^a-z0-9\-]/g, '');
 
 // Helpers
-const transformOpacity = require('./helpers/transformOpacity');
-const transformLineHeight = require('./helpers/transformLineHeight');
-const transformFontWeight = require('./helpers/transformFontWeight');
-const transformDimension = require('./helpers/transformDimension');
+const transformOpacity = require('./helpers/transformOpacity.cjs');
+const transformLineHeight = require('./helpers/transformLineHeight.cjs');
+const transformFontWeight = require('./helpers/transformFontWeight.cjs');
+const transformDimension = require('./helpers/transformDimension.cjs');
 
 function processTokenObject(obj, prefix = [], result = {}, normalizedFileName = '') {
   for (const key in obj) {
