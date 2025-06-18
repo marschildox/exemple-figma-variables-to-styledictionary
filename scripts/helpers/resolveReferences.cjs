@@ -7,20 +7,8 @@
 module.exports = function resolveReferences(tokens) {
   const resolvedTokens = {};
 
-  const colorNames = {
-    'White.FFF': '#FFFFFF',
-    'White.FFFFFF': '#FFFFFF',
-    'Black.000': '#000000',
-    'Black.000000': '#000000'
-  };
-
   const getReferenceValue = (ref) => {
     const refKey = ref.replace(/[{}]/g, '');
-
-    // Si es un color "nombre conocido", devuelve el hex
-    if (colorNames[refKey]) {
-      return colorNames[refKey];
-    }
 
     // Si es Primary.Primary-4%, primero resuelvo Primary.Primary
     const aliasMatch = refKey.match(/^(.+)\.(.+)-(\d+)%$/);
