@@ -1,45 +1,49 @@
-// resolveReferences.cjs
-
-/**
- * Recibe un objeto flatten de tokens (globalTokens)
- * y devuelve el mismo objeto con las referencias resueltas
- */
-module.exports = function resolveReferences(tokens) {
+const resolveReferences = (tokens) => {
   const resolvedTokens = {};
 
   const getReferenceValue = (ref) => {
-    // {Blue.500-4%} → Blue.500-4%
     const refKey = ref.replace(/[{}]/g, '');
 
-    // Si es una referencia con -4% → alpha
-    if (refKey.match(/-\d+%$/)) {
-      const baseRef = refKey.replace(/-\d+%$/, '');
-      const alpha = parseInt(refKey.match(/-(\d+)%$/)[1], 10) / 100;
+    // Si es Primary.Primary-4%, primero resuelvo Primary.Primary
+    const aliasMatch = refKey.match(/^(.+)\.(.+)-(\d+)%$/);
+    if (aliasMatch) {
+      const baseAlias = `${aliasMatch[1]}.${aliasMatch[2]}`;
+      const alpha = parseInt(aliasMatch[3], 10) / 100;
+
+      const baseValue = getReferenceValue(`{${baseAlias}}`);
+      return hexToRgba(baseValue, alpha);
+    }
+
+    // Si es Blue.500-4%
+    const percentMatch = refKey.match(/(.+)-(\d+)%$/);
+    if (percentMatch) {
+      const baseRef = percentMatch[1];
+      const alpha = parseInt(percentMatch[2], 10) / 100;
+
       const match = Object.entries(tokens).find(([key]) => key.endsWith(baseRef));
       if (match) {
         const [, token] = match;
         return hexToRgba(token.value, alpha);
       } else {
         console.warn(`⚠️ Reference with alpha not found: ${refKey}`);
-        return ref; // fallback
+        return ref;
       }
     }
 
-    // Referencia simple
+    // Normal referencia simple
     const match = Object.entries(tokens).find(([key]) => key.endsWith(refKey));
     if (match) {
       const [, token] = match;
-      return typeof token.value === 'string' ? token.value : '';
+      return token.value;
+    } else {
+      console.warn(`⚠️ Reference not found: ${refKey}`);
+      return ref;
     }
-
-    console.warn(`⚠️ Reference not found: ${refKey}`);
-    return ref; // fallback
   };
 
   for (const [key, token] of Object.entries(tokens)) {
     let value = token.value;
 
-    // Si el value es referencia, resuélvelo
     if (typeof value === 'string' && value.match(/^{.+}$/)) {
       value = getReferenceValue(value);
     }
@@ -53,7 +57,7 @@ module.exports = function resolveReferences(tokens) {
   return resolvedTokens;
 };
 
-function hexToRgba(hex, alpha) {
+const hexToRgba = (hex, alpha) => {
   const hexValue = hex.replace('#', '');
   const bigint = parseInt(hexValue.length === 3
     ? hexValue.split('').map(c => c + c).join('')
@@ -62,4 +66,6 @@ function hexToRgba(hex, alpha) {
   const g = (bigint >> 8) & 255;
   const b = bigint & 255;
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-}
+};
+
+module.exports = resolveReferences;
