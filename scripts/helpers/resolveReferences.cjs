@@ -1,5 +1,3 @@
-// resolveReferences.cjs
-
 /**
  * Recibe un objeto flatten de tokens (globalTokens)
  * y devuelve el mismo objeto con las referencias resueltas
@@ -7,7 +5,8 @@
 module.exports = function resolveReferences(tokens) {
   const resolvedTokens = {};
 
-  const colorNames = {
+  // Alias conocidos
+  const colorAliases = {
     'White.FFF': '#FFFFFF',
     'White.FFFFFF': '#FFFFFF',
     'Black.000': '#000000',
@@ -15,14 +14,14 @@ module.exports = function resolveReferences(tokens) {
   };
 
   const getReferenceValue = (ref) => {
-    const refKey = ref.replace(/[{}]/g, '').trim();
+    const refKey = ref.replace(/[{}]/g, '');
 
-    // Si es un color "nombre conocido", devuelve el hex
-    if (colorNames[refKey]) {
-      return colorNames[refKey];
+    // Si es alias conocido
+    if (colorAliases[refKey]) {
+      return colorAliases[refKey];
     }
 
-    // Si es Primary.Primary-4%, primero resuelvo Primary.Primary
+    // Si es Primary.Primary-4%
     const aliasMatch = refKey.match(/^(.+)\.(.+)-(\d+)%$/);
     if (aliasMatch) {
       const baseAlias = `${aliasMatch[1]}.${aliasMatch[2]}`;
@@ -32,10 +31,10 @@ module.exports = function resolveReferences(tokens) {
       return hexToRgba(baseValue, alpha);
     }
 
-    // Si es Blue.500-4% (o cualquier otro color con -%)
+    // Si es Blue.500-4% (directamente)
     const percentMatch = refKey.match(/(.+)-(\d+)%$/);
     if (percentMatch) {
-      const baseRef = percentMatch[1].trim();
+      const baseRef = percentMatch[1];
       const alpha = parseInt(percentMatch[2], 10) / 100;
 
       const match = Object.entries(tokens).find(([key]) => key.endsWith(baseRef));
@@ -48,22 +47,18 @@ module.exports = function resolveReferences(tokens) {
       }
     }
 
-    // Normal referencia simple
+    // Referencia simple
     const match = Object.entries(tokens).find(([key]) => key.endsWith(refKey));
     if (match) {
       const [, token] = match;
       return token.value;
     } else {
-      // Si es un color primitivo con nombre "básico", lo resolvemos igual
-      if (refKey in colorNames) {
-        return colorNames[refKey];
-      }
-
       console.warn(`⚠️ Reference not found: ${refKey}`);
       return ref;
     }
   };
 
+  // Resolvemos todos los tokens
   for (const [key, token] of Object.entries(tokens)) {
     let value = token.value;
 
@@ -85,14 +80,12 @@ module.exports = function resolveReferences(tokens) {
   return resolvedTokens;
 };
 
+// Utilidad para convertir HEX a RGBA
 const hexToRgba = (hex, alpha) => {
   const hexValue = hex.replace('#', '');
-  const bigint = parseInt(
-    hexValue.length === 3
-      ? hexValue.split('').map((c) => c + c).join('')
-      : hexValue,
-    16
-  );
+  const bigint = parseInt(hexValue.length === 3
+    ? hexValue.split('').map(c => c + c).join('')
+    : hexValue, 16);
   const r = (bigint >> 16) & 255;
   const g = (bigint >> 8) & 255;
   const b = bigint & 255;
