@@ -13,7 +13,7 @@
         "codeSyntax": {}
       }
     },
-    "name": "spacingstandard-spacing-xs"
+    "name": "spacing-standard-spacing-xs"
   },
   "spacing-sm": {
     "type": "number",
@@ -29,7 +29,7 @@
         "codeSyntax": {}
       }
     },
-    "name": "spacingstandard-spacing-sm"
+    "name": "spacing-standard-spacing-sm"
   },
   "spacing-md": {
     "type": "number",
@@ -45,7 +45,7 @@
         "codeSyntax": {}
       }
     },
-    "name": "spacingstandard-spacing-md"
+    "name": "spacing-standard-spacing-md"
   },
   "spacing-lg": {
     "type": "number",
@@ -61,7 +61,7 @@
         "codeSyntax": {}
       }
     },
-    "name": "spacingstandard-spacing-lg"
+    "name": "spacing-standard-spacing-lg"
   },
   "spacing-xl": {
     "type": "number",
@@ -77,6 +77,6 @@
         "codeSyntax": {}
       }
     },
-    "name": "spacingstandard-spacing-xl"
+    "name": "spacing-standard-spacing-xl"
   }
 }
