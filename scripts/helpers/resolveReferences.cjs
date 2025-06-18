@@ -67,9 +67,13 @@ module.exports = function resolveReferences(tokens) {
     }
 
     resolvedTokens[key] = {
-      ...token,
-      value
-    };
+  ...token,
+  value,
+  original: {
+    ...token.original,
+    value
+  }
+};
   }
 
   return resolvedTokens;
