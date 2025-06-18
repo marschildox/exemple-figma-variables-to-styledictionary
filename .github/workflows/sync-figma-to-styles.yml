@@ -47,7 +47,8 @@ jobs:
 
       - name: Preprocess tokens to avoid naming conflicts
         run: npm run preprocess
-
+      - name: Debug global tokens
+        run: node scripts/debug-global-tokens.cjs
       - name: Build Style Dictionary (uses config.json to define src/dest)
         run: npm run build
       - name: Ensure changes are added
