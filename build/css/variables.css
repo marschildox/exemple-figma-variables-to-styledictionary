@@ -18,12 +18,13 @@
 
 
 [data-theme-borderradiusprimitives="mode1"] {
-  --borderradiusprimitives-mode1-radius_2px: 2;
-  --borderradiusprimitives-mode1-radius_4px: 4;
-  --borderradiusprimitives-mode1-radius_8px: 8;
-  --borderradiusprimitives-mode1-radius_16px: 16;
-  --borderradiusprimitives-mode1-radius_24px: 24;
-  --borderradiusprimitives-mode1-radius_32px: 32;
+  --borderradiusprimitives-mode1-radius_0px: 0px;
+  --borderradiusprimitives-mode1-radius_2px: 2px;
+  --borderradiusprimitives-mode1-radius_4px: 4px;
+  --borderradiusprimitives-mode1-radius_8px: 8px;
+  --borderradiusprimitives-mode1-radius_16px: 16px;
+  --borderradiusprimitives-mode1-radius_24px: 24px;
+  --borderradiusprimitives-mode1-radius_32px: 32px;
 }
 
 
@@ -215,7 +216,7 @@
 [data-theme-semanticcolors="asiaverdezul"] {
 }
 
-[data-theme-semanticcolors="asiático"] {
+[data-theme-semanticcolors="asiatico"] {
 }
 
 [data-theme-semanticcolors="gubernamental"] {
@@ -227,7 +228,7 @@
 [data-theme-semanticcolors="modern"] {
 }
 
-[data-theme-semanticcolors="musulmán"] {
+[data-theme-semanticcolors="musulman"] {
 }
 
 [data-theme-semanticcolors="occidental"] {
@@ -326,11 +327,11 @@
 }
 
 [data-theme-spacing="standard"] {
-  --spacing-standard-spacing-xs: 8;
-  --spacing-standard-spacing-sm: 12;
-  --spacing-standard-spacing-md: 16;
-  --spacing-standard-spacing-lg: 24;
-  --spacing-standard-spacing-xl: 32;
+  --spacing-standard-spacing-xs: 8px;
+  --spacing-standard-spacing-sm: 12px;
+  --spacing-standard-spacing-md: 16px;
+  --spacing-standard-spacing-lg: 24px;
+  --spacing-standard-spacing-xl: 32px;
 }
 
 
@@ -369,65 +370,65 @@
 
 [data-theme-typography="mode1"] {
   --typography-mode1-Hero-Font Family: Josefin Sans;
-  --typography-mode1-Hero-size-lg: 72;
-  --typography-mode1-Hero-size-md: 64;
-  --typography-mode1-Hero-size-sm: 48;
-  --typography-mode1-Hero-size-xs: 40;
-  --typography-mode1-Hero-Font weight: 700;
+  --typography-mode1-Hero-size-lg: 72px;
+  --typography-mode1-Hero-size-md: 64px;
+  --typography-mode1-Hero-size-sm: 48px;
+  --typography-mode1-Hero-size-xs: 40px;
+  --typography-mode1-Hero-Font weight: 700px;
   --typography-mode1-Hero Subtitle-Font Family: Source Sans 3;
-  --typography-mode1-Hero Subtitle-size-lg: 40;
-  --typography-mode1-Hero Subtitle-size-md: 32;
-  --typography-mode1-Hero Subtitle-size-sm: 24;
-  --typography-mode1-Hero Subtitle-Font regular: 400;
-  --typography-mode1-Hero Subtitle-Font strong: 700;
+  --typography-mode1-Hero Subtitle-size-lg: 40px;
+  --typography-mode1-Hero Subtitle-size-md: 32px;
+  --typography-mode1-Hero Subtitle-size-sm: 24px;
+  --typography-mode1-Hero Subtitle-Font regular: 400px;
+  --typography-mode1-Hero Subtitle-Font strong: 700px;
   --typography-mode1-Page Title-Font Family: Josefin Sans;
-  --typography-mode1-Page Title-size-lg: 64;
-  --typography-mode1-Page Title-size-md: 48;
-  --typography-mode1-Page Title-size-sm: 32;
-  --typography-mode1-Page Title-Font weight: 700;
+  --typography-mode1-Page Title-size-lg: 64px;
+  --typography-mode1-Page Title-size-md: 48px;
+  --typography-mode1-Page Title-size-sm: 32px;
+  --typography-mode1-Page Title-Font weight: 700px;
   --typography-mode1-Page Subtitle-Font Family: Source Sans 3;
-  --typography-mode1-Page Subtitle-size-lg: 40;
-  --typography-mode1-Page Subtitle-size-md: 32;
-  --typography-mode1-Page Subtitle-Size-sm: 24;
-  --typography-mode1-Page Subtitle-Font weight: 400;
+  --typography-mode1-Page Subtitle-size-lg: 40px;
+  --typography-mode1-Page Subtitle-size-md: 32px;
+  --typography-mode1-Page Subtitle-Size-sm: 24px;
+  --typography-mode1-Page Subtitle-Font weight: 400px;
   --typography-mode1-Section Title-Font Family: Josefin Sans;
-  --typography-mode1-Section Title-size-lg: 32;
-  --typography-mode1-Section Title-size-md: 24;
-  --typography-mode1-Section Title-Size-sm: 20;
-  --typography-mode1-Section Title-Font weight: 600;
+  --typography-mode1-Section Title-size-lg: 32px;
+  --typography-mode1-Section Title-size-md: 24px;
+  --typography-mode1-Section Title-Size-sm: 20px;
+  --typography-mode1-Section Title-Font weight: 600px;
   --typography-mode1-Section Subtitle-Font Family: Source Sans 3;
-  --typography-mode1-Section Subtitle-size-lg: 24;
-  --typography-mode1-Section Subtitle-size-md: 20;
-  --typography-mode1-Section Subtitle-Size-sm: 16;
-  --typography-mode1-Section Subtitle-Font weight: 400;
+  --typography-mode1-Section Subtitle-size-lg: 24px;
+  --typography-mode1-Section Subtitle-size-md: 20px;
+  --typography-mode1-Section Subtitle-Size-sm: 16px;
+  --typography-mode1-Section Subtitle-Font weight: 400px;
   --typography-mode1-Component Title-Font Family: Source Sans 3;
-  --typography-mode1-Component Title-size-lg: 32;
-  --typography-mode1-Component Title-size-md: 24;
-  --typography-mode1-Component Title-Size-sm: 20;
-  --typography-mode1-Component Title-Font weight: 600;
+  --typography-mode1-Component Title-size-lg: 32px;
+  --typography-mode1-Component Title-size-md: 24px;
+  --typography-mode1-Component Title-Size-sm: 20px;
+  --typography-mode1-Component Title-Font weight: 600px;
   --typography-mode1-Component Subtitle-Font Family: Source Sans 3;
-  --typography-mode1-Component Subtitle-size-lg: 24;
-  --typography-mode1-Component Subtitle-size-md: 20;
-  --typography-mode1-Component Subtitle-Size-sm: 16;
-  --typography-mode1-Component Subtitle-Font weight: 400;
+  --typography-mode1-Component Subtitle-size-lg: 24px;
+  --typography-mode1-Component Subtitle-size-md: 20px;
+  --typography-mode1-Component Subtitle-Size-sm: 16px;
+  --typography-mode1-Component Subtitle-Font weight: 400px;
   --typography-mode1-Body-Font Family: Source Sans 3;
-  --typography-mode1-Body-size-lg: 20;
-  --typography-mode1-Body-size-md: 16;
-  --typography-mode1-Body-Size-sm: 14;
-  --typography-mode1-Body-Font regular: 400;
-  --typography-mode1-Body-Font strong: 600;
+  --typography-mode1-Body-size-lg: 20px;
+  --typography-mode1-Body-size-md: 16px;
+  --typography-mode1-Body-Size-sm: 14px;
+  --typography-mode1-Body-Font regular: 400px;
+  --typography-mode1-Body-Font strong: 600px;
   --typography-mode1-Body-Italic: Medium Italic;
   --typography-mode1-Button-Font Family: Source Sans 3;
-  --typography-mode1-Button-size-lg: 18;
-  --typography-mode1-Button-size-md: 16;
-  --typography-mode1-Button-size-sm: 14;
-  --typography-mode1-Button-Font strong: 600;
+  --typography-mode1-Button-size-lg: 18px;
+  --typography-mode1-Button-size-md: 16px;
+  --typography-mode1-Button-size-sm: 14px;
+  --typography-mode1-Button-Font strong: 600px;
   --typography-mode1-Caption-Font Family: Source Sans 3;
-  --typography-mode1-Caption-size-lg: 14;
-  --typography-mode1-Caption-size-md: 12;
-  --typography-mode1-Caption-size-sm: 10;
-  --typography-mode1-Caption-Font regular: 400;
-  --typography-mode1-Caption-Font strong: 600;
+  --typography-mode1-Caption-size-lg: 14px;
+  --typography-mode1-Caption-size-md: 12px;
+  --typography-mode1-Caption-size-sm: 10px;
+  --typography-mode1-Caption-Font regular: 400px;
+  --typography-mode1-Caption-Font strong: 600px;
 }
 
 
@@ -438,27 +439,27 @@
   --typographyprimitives-modern-Font Family-Family Title: Josefin Sans;
   --typographyprimitives-modern-Font Family-Family Body: Source Sans 3;
   --typographyprimitives-modern-Font Family-Family Button: Source Sans 3;
-  --typographyprimitives-modern-Size-Size-10: 10;
-  --typographyprimitives-modern-Size-Size-12: 12;
-  --typographyprimitives-modern-Size-Size-14: 14;
-  --typographyprimitives-modern-Size-Size-16: 16;
-  --typographyprimitives-modern-Size-Size-18: 18;
-  --typographyprimitives-modern-Size-Size-20: 20;
-  --typographyprimitives-modern-Size-Size-24: 24;
-  --typographyprimitives-modern-Size-Size-32: 32;
-  --typographyprimitives-modern-Size-Size-40: 40;
-  --typographyprimitives-modern-Size-Size-48: 48;
-  --typographyprimitives-modern-Size-Size-64: 64;
-  --typographyprimitives-modern-Size-Size-72: 72;
-  --typographyprimitives-modern-Weight-Weight-100-thin: 100;
-  --typographyprimitives-modern-Weight-Weight-200-extralight: 200;
-  --typographyprimitives-modern-Weight-Weight-300-light: 300;
-  --typographyprimitives-modern-Weight-Weight-400-regular: 400;
-  --typographyprimitives-modern-Weight-Weight-500-medium: 500;
-  --typographyprimitives-modern-Weight-Weight-600-semibold: 600;
-  --typographyprimitives-modern-Weight-Weight-700-bold: 700;
-  --typographyprimitives-modern-Weight-Weight-800-extrabold: 800;
-  --typographyprimitives-modern-Weight-Weight-900-black: 900;
+  --typographyprimitives-modern-Size-Size-10: 10px;
+  --typographyprimitives-modern-Size-Size-12: 12px;
+  --typographyprimitives-modern-Size-Size-14: 14px;
+  --typographyprimitives-modern-Size-Size-16: 16px;
+  --typographyprimitives-modern-Size-Size-18: 18px;
+  --typographyprimitives-modern-Size-Size-20: 20px;
+  --typographyprimitives-modern-Size-Size-24: 24px;
+  --typographyprimitives-modern-Size-Size-32: 32px;
+  --typographyprimitives-modern-Size-Size-40: 40px;
+  --typographyprimitives-modern-Size-Size-48: 48px;
+  --typographyprimitives-modern-Size-Size-64: 64px;
+  --typographyprimitives-modern-Size-Size-72: 72px;
+  --typographyprimitives-modern-Weight-Weight-100-thin: 100px;
+  --typographyprimitives-modern-Weight-Weight-200-extralight: 200px;
+  --typographyprimitives-modern-Weight-Weight-300-light: 300px;
+  --typographyprimitives-modern-Weight-Weight-400-regular: 400px;
+  --typographyprimitives-modern-Weight-Weight-500-medium: 500px;
+  --typographyprimitives-modern-Weight-Weight-600-semibold: 600px;
+  --typographyprimitives-modern-Weight-Weight-700-bold: 700px;
+  --typographyprimitives-modern-Weight-Weight-800-extrabold: 800px;
+  --typographyprimitives-modern-Weight-Weight-900-black: 900px;
   --typographyprimitives-modern-Style-Thin Italic: Thin Italic;
   --typographyprimitives-modern-Style-Extra ligh Italic: Extra ligh Italic;
   --typographyprimitives-modern-Style-Light Italic: Light Italic;
@@ -468,4 +469,4 @@
   --typographyprimitives-modern-Style-Extra Bold Italic: Extra Bold Italic;
   --typographyprimitives-modern-Style-Black Italic: Black Italic;
 }
-/* Generated: 2025-06-18T09:03:30.402Z */
+/* Generated: 2025-06-18T11:14:42.383Z */
