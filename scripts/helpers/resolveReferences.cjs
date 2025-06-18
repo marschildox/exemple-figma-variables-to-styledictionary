@@ -69,11 +69,8 @@ module.exports = function resolveReferences(tokens) {
     resolvedTokens[key] = {
   ...token,
   path: token.path || key.split('.'),
-  value,
-  original: {
-    ...token.original,
-    value
-  }
+  value: resolved,
+  original: { value: resolved }
 };
 
   }
