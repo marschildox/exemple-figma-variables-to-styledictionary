@@ -7,8 +7,20 @@
 module.exports = function resolveReferences(tokens) {
   const resolvedTokens = {};
 
+  const colorNames = {
+    'White.FFF': '#FFFFFF',
+    'White.FFFFFF': '#FFFFFF',
+    'Black.000': '#000000',
+    'Black.000000': '#000000'
+  };
+
   const getReferenceValue = (ref) => {
-    const refKey = ref.replace(/[{}]/g, '');
+    const refKey = ref.replace(/[{}]/g, '').trim();
+
+    // Si es un color "nombre conocido", devuelve el hex
+    if (colorNames[refKey]) {
+      return colorNames[refKey];
+    }
 
     // Si es Primary.Primary-4%, primero resuelvo Primary.Primary
     const aliasMatch = refKey.match(/^(.+)\.(.+)-(\d+)%$/);
@@ -20,10 +32,10 @@ module.exports = function resolveReferences(tokens) {
       return hexToRgba(baseValue, alpha);
     }
 
-    // Si es Blue.500-4%
+    // Si es Blue.500-4% (o cualquier otro color con -%)
     const percentMatch = refKey.match(/(.+)-(\d+)%$/);
     if (percentMatch) {
-      const baseRef = percentMatch[1];
+      const baseRef = percentMatch[1].trim();
       const alpha = parseInt(percentMatch[2], 10) / 100;
 
       const match = Object.entries(tokens).find(([key]) => key.endsWith(baseRef));
@@ -42,6 +54,11 @@ module.exports = function resolveReferences(tokens) {
       const [, token] = match;
       return token.value;
     } else {
+      // Si es un color primitivo con nombre "básico", lo resolvemos igual
+      if (refKey in colorNames) {
+        return colorNames[refKey];
+      }
+
       console.warn(`⚠️ Reference not found: ${refKey}`);
       return ref;
     }
@@ -70,9 +87,12 @@ module.exports = function resolveReferences(tokens) {
 
 const hexToRgba = (hex, alpha) => {
   const hexValue = hex.replace('#', '');
-  const bigint = parseInt(hexValue.length === 3
-    ? hexValue.split('').map(c => c + c).join('')
-    : hexValue, 16);
+  const bigint = parseInt(
+    hexValue.length === 3
+      ? hexValue.split('').map((c) => c + c).join('')
+      : hexValue,
+    16
+  );
   const r = (bigint >> 16) & 255;
   const g = (bigint >> 8) & 255;
   const b = bigint & 255;
