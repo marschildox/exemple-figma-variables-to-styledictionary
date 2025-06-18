@@ -1,8 +1,8 @@
 // resolveReferences.cjs
 
 /**
- * Recibe un objeto flatten de tokens: { key: { name, value, ... }, ... }
- * y devuelve el mismo objeto con los value resueltos
+ * Recibe un objeto flatten de tokens (globalTokens)
+ * y devuelve el mismo objeto con las referencias resueltas
  */
 module.exports = function resolveReferences(tokens) {
   const resolvedTokens = {};
