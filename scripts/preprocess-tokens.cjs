@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 const path = require('path');
 
@@ -9,16 +8,47 @@ if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
 const metadata = {};
 
-const normalize = str => str.toLowerCase().replace(/\s+/g, '').replace(/\./g, '');
+const normalize = str =>
+  str
+    .toLowerCase()
+    .normalize('NFD') // elimina acentos
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, '')
+    .replace(/\./g, '')
+    .replace(/[^a-z0-9\-]/g, '');
+
+// Helpers
+const transformOpacity = require('./helpers/transformOpacity');
+const transformLineHeight = require('./helpers/transformLineHeight');
+const transformFontWeight = require('./helpers/transformFontWeight');
+const transformDimension = require('./helpers/transformDimension');
 
 function processTokenObject(obj, prefix = [], result = {}, normalizedFileName = '') {
   for (const key in obj) {
     const value = obj[key];
     const pathArray = [...prefix, key];
+
     if (value && typeof value === 'object' && 'value' in value) {
+      let finalValue = value.value;
+
+      // Aplica transforms según tipo
+      if (key.toLowerCase().includes('opacity')) {
+        finalValue = transformOpacity(finalValue);
+      }
+      if (key.toLowerCase().includes('lineheight')) {
+        finalValue = transformLineHeight(finalValue);
+      }
+      if (key.toLowerCase().includes('fontweight')) {
+        finalValue = transformFontWeight(finalValue);
+      }
+      if (typeof finalValue === 'number' || key.toLowerCase().includes('dimension') || key.toLowerCase().includes('size') || key.toLowerCase().includes('spacing')) {
+        finalValue = transformDimension(finalValue);
+      }
+
       result[pathArray.join('.')] = {
         ...value,
-        name: `${normalizedFileName}-${pathArray.join('-')}`
+        name: `${normalizedFileName}-${pathArray.join('-')}`,
+        value: finalValue
       };
     } else if (typeof value === 'object') {
       processTokenObject(value, pathArray, result, normalizedFileName);
