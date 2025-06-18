@@ -6,6 +6,7 @@
     "css": {
       "transformGroup": "custom/css-plain",
       "buildPath": "build/css/",
+      "doNotThrowOnResolutionErrors": true,
       "files": [
         {
           "destination": "variables.css",
