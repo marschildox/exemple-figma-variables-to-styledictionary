@@ -91,7 +91,7 @@ fs.readdirSync(inputDir).forEach(file => {
       current[parts[i]] = current[parts[i]] || {};
       current = current[parts[i]];
     }
-    current[parts.at(-1)] = flatTokens[key];
+    current[parts.at(-1)] = resolvedTokens[key];
   }
 
   const outPath = path.join(outputDir, file);
