@@ -14,7 +14,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Primary-Hover"
+      "name": "statesoverlay-blue-Primary-Hover"
     },
     "Focused": {
       "type": "color",
@@ -30,7 +30,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Primary-Focused"
+      "name": "statesoverlay-blue-Primary-Focused"
     },
     "Pressed": {
       "type": "color",
@@ -46,7 +46,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Primary-Pressed"
+      "name": "statesoverlay-blue-Primary-Pressed"
     },
     "Dragged": {
       "type": "color",
@@ -62,7 +62,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Primary-Dragged"
+      "name": "statesoverlay-blue-Primary-Dragged"
     },
     "Selected": {
       "type": "color",
@@ -78,7 +78,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Primary-Selected"
+      "name": "statesoverlay-blue-Primary-Selected"
     }
   },
   "Black": {
@@ -96,7 +96,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Black-Hover"
+      "name": "statesoverlay-blue-Black-Hover"
     },
     "Focused": {
       "type": "color",
@@ -112,7 +112,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Black-Focused"
+      "name": "statesoverlay-blue-Black-Focused"
     },
     "Pressed": {
       "type": "color",
@@ -128,7 +128,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Black-Pressed"
+      "name": "statesoverlay-blue-Black-Pressed"
     },
     "Dragged": {
       "type": "color",
@@ -144,7 +144,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Black-Dragged"
+      "name": "statesoverlay-blue-Black-Dragged"
     },
     "Selected": {
       "type": "color",
@@ -160,7 +160,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Black-Selected"
+      "name": "statesoverlay-blue-Black-Selected"
     }
   },
   "White": {
@@ -178,7 +178,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-White-Hover"
+      "name": "statesoverlay-blue-White-Hover"
     },
     "Focused": {
       "type": "color",
@@ -194,7 +194,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-White-Focused"
+      "name": "statesoverlay-blue-White-Focused"
     },
     "Pressed": {
       "type": "color",
@@ -210,7 +210,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-White-Pressed"
+      "name": "statesoverlay-blue-White-Pressed"
     },
     "Dragged": {
       "type": "color",
@@ -226,7 +226,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-White-Dragged"
+      "name": "statesoverlay-blue-White-Dragged"
     },
     "Selected": {
       "type": "color",
@@ -242,7 +242,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-White-Selected"
+      "name": "statesoverlay-blue-White-Selected"
     }
   },
   "Error": {
@@ -260,7 +260,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Error-Hover"
+      "name": "statesoverlay-blue-Error-Hover"
     },
     "Focused": {
       "type": "color",
@@ -276,7 +276,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Error-Focused"
+      "name": "statesoverlay-blue-Error-Focused"
     },
     "Pressed": {
       "type": "color",
@@ -292,7 +292,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Error-Pressed"
+      "name": "statesoverlay-blue-Error-Pressed"
     },
     "Dragged": {
       "type": "color",
@@ -308,7 +308,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Error-Dragged"
+      "name": "statesoverlay-blue-Error-Dragged"
     },
     "Selected": {
       "type": "color",
@@ -324,7 +324,7 @@
           "codeSyntax": {}
         }
       },
-      "name": "statesoverlayblue-Error-Selected"
+      "name": "statesoverlay-blue-Error-Selected"
     }
   }
 }
