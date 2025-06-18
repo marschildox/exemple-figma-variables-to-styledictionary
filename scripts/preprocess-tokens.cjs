@@ -120,14 +120,18 @@ fs.readdirSync(inputDir).forEach(file => {
 
   const outPath = path.join(outputDir, file);
   fs.writeFileSync(outPath, JSON.stringify(nested, null, 2), 'utf-8');
+
+  console.log(`✅ Written: tokens-prepared/${file} (${Object.keys(nested).length} top-level keys)`); // NUEVO
 });
 
 // Escribimos metadata.json
 const metadataPath = path.join(outputDir, 'metadata.json');
 fs.writeFileSync(metadataPath, JSON.stringify(metadata, null, 2), 'utf-8');
 
+// Escribimos tokens-global.json
 const globalOutPath = path.join(outputDir, 'tokens-global.json');
 fs.writeFileSync(globalOutPath, JSON.stringify(resolvedTokens, null, 2), 'utf-8');
+console.log(`✅ Written: tokens-prepared/tokens-global.json (${Object.keys(resolvedTokens).length} tokens)`); // NUEVO
 
 // Extra: genera un core-colors.json para Style Dictionary
 const coreColors = {};
@@ -139,3 +143,4 @@ const coreColors = {};
 });
 const coreOutPath = path.join(outputDir, '_core-colors.json');
 fs.writeFileSync(coreOutPath, JSON.stringify(coreColors, null, 2), 'utf-8');
+console.log(`✅ Written: tokens-prepared/_core-colors.json (${Object.keys(coreColors).length} colors)`); // NUEVO
