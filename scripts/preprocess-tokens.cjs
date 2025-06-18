@@ -18,6 +18,8 @@ const normalize = str =>
     .replace(/[^a-z0-9\-]/g, '');
 
 // Helpers
+const transformTypography = require('./helpers/transformTypography.cjs');
+const addFontStyles = require('./helpers/add-font-styles.cjs');
 const transformOpacity = require('./helpers/transformOpacity.cjs');
 const transformLineHeight = require('./helpers/transformLineHeight.cjs');
 const transformFontWeight = require('./helpers/transformFontWeight.cjs');
@@ -33,6 +35,23 @@ function processTokenObject(obj, prefix = [], result = {}, normalizedFileName = 
     const pathArray = [...prefix, key];
 
     if (value && typeof value === 'object' && 'value' in value) {
+
+      // Si es typography → transformamos
+      if (value.type === 'typography') {
+        const typography = transformTypography(value.value);
+        const fontTokens = addFontStyles(`${normalizedFileName}-${pathArray.join('-')}`, typography);
+
+        for (const subKey in fontTokens) {
+          result[subKey] = {
+            ...value,
+            name: subKey,
+            value: fontTokens[subKey]
+          };
+        }
+
+        continue; // salto a siguiente token
+      }
+
       let finalValue = value.value;
 
       // Aplica transforms según tipo
@@ -54,12 +73,15 @@ function processTokenObject(obj, prefix = [], result = {}, normalizedFileName = 
         name: `${normalizedFileName}-${pathArray.join('-')}`,
         value: finalValue
       };
+
     } else if (typeof value === 'object') {
       processTokenObject(value, pathArray, result, normalizedFileName);
     }
   }
+
   return result;
 }
+
 
 // Procesamos cada archivo
 fs.readdirSync(inputDir).forEach(file => {
