@@ -22,6 +22,8 @@ const transformOpacity = require('./helpers/transformOpacity.cjs');
 const transformLineHeight = require('./helpers/transformLineHeight.cjs');
 const transformFontWeight = require('./helpers/transformFontWeight.cjs');
 const transformDimension = require('./helpers/transformDimension.cjs');
+const resolveReferences = require('./helpers/resolveReferences');
+
 
 function processTokenObject(obj, prefix = [], result = {}, normalizedFileName = '') {
   for (const key in obj) {
@@ -78,9 +80,11 @@ fs.readdirSync(inputDir).forEach(file => {
   }
 
   const flatTokens = processTokenObject(raw, [], {}, normalizedFileName);
+  const resolvedTokens = resolveReferences(flatTokens);
+
 
   const nested = {};
-  for (const key in flatTokens) {
+  for (const key in resolvedTokens) {
     const parts = key.split('.');
     let current = nested;
     for (let i = 0; i < parts.length - 1; i++) {
