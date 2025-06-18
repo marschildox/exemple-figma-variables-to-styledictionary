@@ -22,7 +22,7 @@ const transformOpacity = require('./helpers/transformOpacity.cjs');
 const transformLineHeight = require('./helpers/transformLineHeight.cjs');
 const transformFontWeight = require('./helpers/transformFontWeight.cjs');
 const transformDimension = require('./helpers/transformDimension.cjs');
-const resolveReferences = require('./helpers/resolveReferences');
+const resolveReferences = require('./helpers/resolveReferences.cjs');
 
 
 function processTokenObject(obj, prefix = [], result = {}, normalizedFileName = '') {
