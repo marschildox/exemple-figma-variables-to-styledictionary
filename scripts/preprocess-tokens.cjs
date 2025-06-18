@@ -24,6 +24,8 @@ const transformFontWeight = require('./helpers/transformFontWeight.cjs');
 const transformDimension = require('./helpers/transformDimension.cjs');
 const resolveReferences = require('./helpers/resolveReferences.cjs');
 
+// tokens globales para resolver referencias cruzadas
+const globalTokens = {};
 
 function processTokenObject(obj, prefix = [], result = {}, normalizedFileName = '') {
   for (const key in obj) {
@@ -59,6 +61,7 @@ function processTokenObject(obj, prefix = [], result = {}, normalizedFileName = 
   return result;
 }
 
+// Procesamos cada archivo
 fs.readdirSync(inputDir).forEach(file => {
   if (!file.endsWith('.json')) return;
 
@@ -80,12 +83,33 @@ fs.readdirSync(inputDir).forEach(file => {
   }
 
   const flatTokens = processTokenObject(raw, [], {}, normalizedFileName);
-  const resolvedTokens = resolveReferences(flatTokens);
 
+  // Añadimos a los tokens globales
+  Object.assign(globalTokens, flatTokens);
+});
+
+// Resolvemos referencias cruzadas
+const resolvedTokens = resolveReferences(globalTokens);
+
+// Para cada archivo, generamos su versión con referencias resueltas
+fs.readdirSync(inputDir).forEach(file => {
+  if (!file.endsWith('.json')) return;
+
+  const baseName = file.replace('.json', '');
+  const parts = baseName.split('.');
+  const rawMode = parts.pop();
+  const rawCollection = parts.join('.');
+  const mode = normalize(rawMode);
+  const collection = normalize(rawCollection);
+
+  const normalizedFileName = `${collection}-${mode}`;
 
   const nested = {};
   for (const key in resolvedTokens) {
-    const parts = key.split('.');
+    if (!key.startsWith(`${normalizedFileName}-`)) continue; // solo tokens de este archivo
+
+    const strippedKey = key.replace(`${normalizedFileName}-`, '');
+    const parts = strippedKey.split('.');
     let current = nested;
     for (let i = 0; i < parts.length - 1; i++) {
       current[parts[i]] = current[parts[i]] || {};
