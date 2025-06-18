@@ -1,7 +1,7 @@
 {
   "spacing-xs": {
     "type": "number",
-    "value": 16,
+    "value": "16px",
     "description": "",
     "extensions": {
       "com.figma": {
@@ -17,7 +17,7 @@
   },
   "spacing-sm": {
     "type": "number",
-    "value": 24,
+    "value": "24px",
     "description": "",
     "extensions": {
       "com.figma": {
@@ -33,7 +33,7 @@
   },
   "spacing-md": {
     "type": "number",
-    "value": 32,
+    "value": "32px",
     "description": "",
     "extensions": {
       "com.figma": {
@@ -49,7 +49,7 @@
   },
   "spacing-lg": {
     "type": "number",
-    "value": 48,
+    "value": "48px",
     "description": "",
     "extensions": {
       "com.figma": {
@@ -65,7 +65,7 @@
   },
   "spacing-xl": {
     "type": "number",
-    "value": 64,
+    "value": "64px",
     "description": "",
     "extensions": {
       "com.figma": {

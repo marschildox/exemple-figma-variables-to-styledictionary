@@ -1,7 +1,7 @@
 {
   "radius_0px": {
     "type": "number",
-    "value": 0,
+    "value": "0px",
     "description": "",
     "extensions": {
       "com.figma": {
@@ -14,7 +14,7 @@
   },
   "radius_2px": {
     "type": "number",
-    "value": 2,
+    "value": "2px",
     "description": "",
     "extensions": {
       "com.figma": {
@@ -27,7 +27,7 @@
   },
   "radius_4px": {
     "type": "number",
-    "value": 4,
+    "value": "4px",
     "description": "",
     "extensions": {
       "com.figma": {
@@ -40,7 +40,7 @@
   },
   "radius_8px": {
     "type": "number",
-    "value": 8,
+    "value": "8px",
     "description": "",
     "extensions": {
       "com.figma": {
@@ -53,7 +53,7 @@
   },
   "radius_16px": {
     "type": "number",
-    "value": 16,
+    "value": "16px",
     "description": "",
     "extensions": {
       "com.figma": {
@@ -66,7 +66,7 @@
   },
   "radius_24px": {
     "type": "number",
-    "value": 24,
+    "value": "24px",
     "description": "",
     "extensions": {
       "com.figma": {
@@ -79,7 +79,7 @@
   },
   "radius_32px": {
     "type": "number",
-    "value": 32,
+    "value": "32px",
     "description": "",
     "extensions": {
       "com.figma": {
