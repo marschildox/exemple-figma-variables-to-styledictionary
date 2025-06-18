@@ -125,3 +125,6 @@ fs.readdirSync(inputDir).forEach(file => {
 // Escribimos metadata.json
 const metadataPath = path.join(outputDir, 'metadata.json');
 fs.writeFileSync(metadataPath, JSON.stringify(metadata, null, 2), 'utf-8');
+const globalOutPath = path.join(outputDir, 'tokens-global.json');
+fs.writeFileSync(globalOutPath, JSON.stringify(resolvedTokens, null, 2), 'utf-8');
+
