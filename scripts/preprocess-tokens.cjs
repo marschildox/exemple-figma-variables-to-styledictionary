@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 const path = require('path');
 
@@ -10,17 +11,17 @@ const metadata = {};
 
 const normalize = str => str.toLowerCase().replace(/\s+/g, '').replace(/\./g, '');
 
-function processTokenObject(obj, prefix = [], result = {}, normalizedFileName = '') {
+function processTokenObject(obj, prefix = [], result = {}, collection = '', mode = '') {
   for (const key in obj) {
     const value = obj[key];
     const pathArray = [...prefix, key];
     if (value && typeof value === 'object' && 'value' in value) {
       result[pathArray.join('.')] = {
         ...value,
-        name: `${normalizedFileName}-${pathArray.join('-')}`
+        name: `${collection}-${mode}-${pathArray.join('-')}`
       };
     } else if (typeof value === 'object') {
-      processTokenObject(value, pathArray, result, normalizedFileName);
+      processTokenObject(value, pathArray, result, collection, mode);
     }
   }
   return result;
@@ -38,14 +39,13 @@ fs.readdirSync(inputDir).forEach(file => {
   const rawCollection = parts.join('.');
   const mode = normalize(rawMode);
   const collection = normalize(rawCollection);
-  const normalizedFileName = normalize(baseName);
 
   metadata[collection] = metadata[collection] || [];
   if (!metadata[collection].includes(mode)) {
     metadata[collection].push(mode);
   }
 
-  const flatTokens = processTokenObject(raw, [], {}, normalizedFileName);
+  const flatTokens = processTokenObject(raw, [], {}, collection, mode);
 
   const nested = {};
   for (const key in flatTokens) {
