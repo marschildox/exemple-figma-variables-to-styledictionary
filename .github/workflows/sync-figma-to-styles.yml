@@ -55,6 +55,12 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add tokens-prepared/ build/css/variables.css || true
+          
+      - name: Force Git add
+        run: |
+          git add tokens-prepared/
+          git add build/css/variables.css
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
