@@ -1,6 +1,7 @@
 {
   "source": [
-    "tokens-prepared/tokens-global.json"
+  "tokens-prepared/_core-colors.json",
+  "tokens-prepared/**/*.json"
   ],
   "platforms": {
     "css": {
